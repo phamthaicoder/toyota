@@ -89,6 +89,45 @@
                                                         </span>
                                                         <select id="form-select" class="form-select" name="action">
                                                             <option value="">Chọn tỉnh / thành phố</option>
+                                                            <option value="An Giang">An Giang</option>
+                                                            <option value="Bac Giang">Bắc Giang</option>
+                                                            <option value="Bac Ninh">Bắc Ninh</option>
+                                                            <option value="Ha Noi">Hà Nội</option>
+                                                            <option value="Hai Duong">Hải Dương</option>
+                                                            <option value="Hai Phong">Hải Phòng</option>
+                                                            <option value="Hoa Binh">Hòa Bình</option>
+                                                            <option value="Lao Cai">Lào Cai</option>
+                                                            <option value="Nam Dinh">Nam Dịnh</option>
+                                                            <option value="Phu Tho">Phú Thọ</option>
+                                                            <option value="Quang Ninh">Quảng Ninh</option>
+                                                            <option value="Son La">Sơn La</option>
+                                                            <option value="Thai Nguyen">Thái Nguyên</option>
+                                                            <option value="Thai Binh">Thái Bình</option>
+                                                            <option value="Hung Yen">Hưng Yên</option>
+                                                            <option value="Vinh Phuc">Vĩnh Phúc</option>
+                                                            <option value="Hai Phong">Hải Phòng</option>
+                                                            <option value="Binh Dinh">Bình Định</option>
+                                                            <option value="Binh Thuan">Bình Thuận</option>
+                                                            <option value="Da Nang">Đà Nẵng</option>
+                                                            <option value="Dak Lak">Dak Lak</option>
+                                                            <option value="Gia Lai">Gia Lai</option>
+                                                            <option value="Ha Tinh">Hà Tĩnh</option>
+                                                            <option value="Nghe An">Nghệ An</option>
+                                                            <option value="Khanh Hoa">Khánh Hòa</option>
+                                                            <option value="Phu Yen">Phú Yên</option>
+                                                            <option value="HCM">Hồ Chí Minh</option>
+                                                            <option value="Thanh Hoa">Thanh Hóa</option>
+                                                            <option value="Can Tho">Cần Thơ</option>
+                                                            <option value="BRVT">Bà Rịa Vũng Tàu</option>
+                                                            <option value="Binh Duong">Bình Dương</option>
+                                                            <option value="Binh Phuoc">Bình Phước</option>
+                                                            <option value="Dong Nai">Đòng Nai</option>
+                                                            <option value="Long An">Long An</option>
+                                                            <option value="Tay Ninh">Tây Ninh</option>
+                                                            <option value="Tien Giang">Tiền Giang</option>
+                                                            <option value="Vinh Long">Vĩnh Long</option>
+                                                            <option value="Ben Tre">Bến Tre</option>
+                                                            <option value="Ca Mau">Cà Mau</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -100,6 +139,9 @@
                                                         </span>
                                                         <select id="form-select" class="form-select" name="action">
                                                             <option value="">Đại lý liên hệ</option>
+                                                            @foreach ($dealer as $itemdealer)
+                                                                <option value="{{ $itemdealer['dealerCode'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                            @endforeach
                                                         </select>
                                                     </div>
                                                 </div>
@@ -905,6 +947,45 @@
                                             </span>
                                             <select id="form-select" class="form-select" name="action">
                                                 <option value="">Chọn tỉnh / thành phố</option>
+                                                <option value="An Giang">An Giang</option>
+                                                <option value="Bac Giang">Bắc Giang</option>
+                                                <option value="Bac Ninh">Bắc Ninh</option>
+                                                <option value="Ha Noi">Hà Nội</option>
+                                                <option value="Hai Duong">Hải Dương</option>
+                                                <option value="Hai Phong">Hải Phòng</option>
+                                                <option value="Hoa Binh">Hòa Bình</option>
+                                                <option value="Lao Cai">Lào Cai</option>
+                                                <option value="Nam Dinh">Nam Dịnh</option>
+                                                <option value="Phu Tho">Phú Thọ</option>
+                                                <option value="Quang Ninh">Quảng Ninh</option>
+                                                <option value="Son La">Sơn La</option>
+                                                <option value="Thai Nguyen">Thái Nguyên</option>
+                                                <option value="Thai Binh">Thái Bình</option>
+                                                <option value="Hung Yen">Hưng Yên</option>
+                                                <option value="Vinh Phuc">Vĩnh Phúc</option>
+                                                <option value="Hai Phong">Hải Phòng</option>
+                                                <option value="Binh Dinh">Bình Định</option>
+                                                <option value="Binh Thuan">Bình Thuận</option>
+                                                <option value="Da Nang">Đà Nẵng</option>
+                                                <option value="Dak Lak">Dak Lak</option>
+                                                <option value="Gia Lai">Gia Lai</option>
+                                                <option value="Ha Tinh">Hà Tĩnh</option>
+                                                <option value="Nghe An">Nghệ An</option>
+                                                <option value="Khanh Hoa">Khánh Hòa</option>
+                                                <option value="Phu Yen">Phú Yên</option>
+                                                <option value="HCM">Hồ Chí Minh</option>
+                                                <option value="Thanh Hoa">Thanh Hóa</option>
+                                                <option value="Can Tho">Cần Thơ</option>
+                                                <option value="BRVT">Bà Rịa Vũng Tàu</option>
+                                                <option value="Binh Duong">Bình Dương</option>
+                                                <option value="Binh Phuoc">Bình Phước</option>
+                                                <option value="Dong Nai">Đòng Nai</option>
+                                                <option value="Long An">Long An</option>
+                                                <option value="Tay Ninh">Tây Ninh</option>
+                                                <option value="Tien Giang">Tiền Giang</option>
+                                                <option value="Vinh Long">Vĩnh Long</option>
+                                                <option value="Ben Tre">Bến Tre</option>
+                                                <option value="Ca Mau">Cà Mau</option>
                                             </select>
                                         </div>
                                     </div>
@@ -916,6 +997,9 @@
                                             </span>
                                             <select id="form-select" class="form-select" name="action">
                                                 <option value="">Đại lý liên hệ</option>
+                                                @foreach ($dealer as $itemdealer)
+                                                 <option value="{{ $itemdealer['dealerCode'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
