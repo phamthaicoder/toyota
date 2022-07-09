@@ -87,7 +87,7 @@
                                                         <span class="input-group-text">
                                                             <img src="./img/general/icon-global-black.svg" alt="">
                                                         </span>
-                                                        <select id="form-select" class="form-select" name="action">
+                                                        <select id="form-select" class="form-select" name="province">
                                                             <option value="">Chọn tỉnh / thành phố</option>
                                                             <option value="An Giang">An Giang</option>
                                                             <option value="Bac Giang">Bắc Giang</option>
@@ -137,10 +137,10 @@
                                                         <span class="input-group-text">
                                                             <img src="./img/general/icon-home-black.svg" alt="">
                                                         </span>
-                                                        <select id="form-select" class="form-select" name="action">
+                                                        <select id="form-select" class="form-select" name="dealer">
                                                             <option value="">Đại lý liên hệ</option>
                                                             @foreach ($dealer as $itemdealer)
-                                                                <option value="{{ $itemdealer['dealerCode'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                                <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
                                                             @endforeach
                                                         </select>
                                                     </div>
@@ -153,7 +153,7 @@
                                                         <span class="input-group-text">
                                                             <img src="./img/general/icon-user-black.svg" alt="">
                                                         </span>
-                                                        <input type="text" class="form-control" id="name"
+                                                        <input type="text" class="form-control" id="name"  name="name"
                                                             placeholder="Nhập họ và tên">
                                                     </div>
                                                 </div>
@@ -163,7 +163,7 @@
                                                         <span class="input-group-text">
                                                             <img src="./img/general/icon-phone-black.svg" alt="">
                                                         </span>
-                                                        <input type="text" class="form-control" id="phone"
+                                                        <input type="text" class="form-control" id="phone" name="phone"
                                                             placeholder="Nhập số điện thoại">
                                                     </div>
                                                 </div>
@@ -175,7 +175,7 @@
                                                         <span class="input-group-text">
                                                             <img src="./img/general/icon-mail-black.svg" alt="">
                                                         </span>
-                                                        <input type="email" class="form-control" id="email"
+                                                        <input type="email" class="form-control" id="email" name="email"
                                                             placeholder="Nhập email">
                                                     </div>
                                                 </div>
@@ -186,7 +186,7 @@
                                                         <span class="input-group-text">
                                                             <img src="{{ asset('img/general/icon-message-black.svg') }}" alt="">
                                                         </span>
-                                                        <select id="form-select" class="form-select" name="action">
+                                                        <select id="form-select" class="form-select" name="to_buy">
                                                             <option value="">Dự định mua xe</option>
                                                             @foreach ($toBuy as $itemToBuy)
                                                                 <option value="{{ $itemToBuy['code'] }}">{{ $itemToBuy['name'] }}</option>
@@ -200,7 +200,7 @@
                                                 Toyota Việt Nam. Toyota Việt Nam sẽ giữ, sử dụng và đảm bảo bảo mật
                                                 thông tin khách hàng
                                                 theo quy định pháp luật nhằm mục đích phục vụ và tư vấn khách hàng.</p>
-                                            <div class="d-flex justify-content-center align-content-center form-action">
+                                            <div class="d-flex justify-content-center align-content-center form-action save-data" style="cursor: pointer;">
                                                 <button class="btn" type="submit">Đăng ký ngay</button>
                                             </div>
                                         </form>
@@ -945,7 +945,7 @@
                                             <span class="input-group-text">
                                                 <img src="{{ asset('img/general/icon-global-black.svg') }}" alt="">
                                             </span>
-                                            <select id="form-select" class="form-select" name="action">
+                                            <select id="form-select" class="form-select" name="province">
                                                 <option value="">Chọn tỉnh / thành phố</option>
                                                 <option value="An Giang">An Giang</option>
                                                 <option value="Bac Giang">Bắc Giang</option>
@@ -995,10 +995,10 @@
                                             <span class="input-group-text">
                                                 <img src="{{ asset('img/general/icon-home-black.svg') }}" alt="">
                                             </span>
-                                            <select id="form-select" class="form-select" name="action">
+                                            <select id="form-select" class="form-select" name="dealer">
                                                 <option value="">Đại lý liên hệ</option>
                                                 @foreach ($dealer as $itemdealer)
-                                                 <option value="{{ $itemdealer['dealerCode'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                 <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -1013,7 +1013,7 @@
                                             <span class="input-group-text">
                                                 <img src="{{ asset('img/general/icon-user-black.svg') }}" alt="">
                                             </span>
-                                            <input type="text" class="form-control" id="name"
+                                            <input type="text" class="form-control" id="name" name="name"
                                                 placeholder="Nhập họ và tên">
                                         </div>
                                     </div>
@@ -1023,7 +1023,7 @@
                                             <span class="input-group-text">
                                                 <img src="{{ asset('img/general/icon-phone-black.svg') }}" alt="">
                                             </span>
-                                            <input type="text" class="form-control" id="phone"
+                                            <input type="text" class="form-control" id="phone" name="phone"
                                                 placeholder="Nhập số điện thoại">
                                         </div>
                                     </div>
@@ -1045,10 +1045,10 @@
                                             <span class="input-group-text">
                                                 <img src="{{ asset('img/general/icon-message-black.svg') }}" alt="">
                                             </span>
-                                            <select id="form-select" class="form-select" name="action">
+                                            <select id="form-select" class="form-select" name="to_buy">
                                                 <option value="">Dự định mua xe</option>
                                                 @foreach ($toBuy as $itemToBuy)
-                                                    <option value="{{ $itemToBuy['code'] }}">{{ $itemToBuy['name'] }}</option>
+                                                    <option value="{{ $itemToBuy['name'] }}">{{ $itemToBuy['name'] }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -1060,7 +1060,7 @@
                                     Toyota Việt Nam. Toyota Việt Nam sẽ giữ, sử dụng và đảm bảo bảo mật thông tin khách
                                     hàng
                                     theo quy định pháp luật nhằm mục đích phục vụ và tư vấn khách hàng.</p>
-                                <div class="d-flex justify-content-center align-content-center form-action">
+                                <div class="d-flex justify-content-center align-content-center form-action save-data" style="cursor: pointer;">
                                     <button class="btn" type="submit">Đăng ký ngay</button>
                                 </div>
                             </div>
@@ -1072,18 +1072,95 @@
                 </div>
             </div>
         </section>
-
+        <div class="toast" data-autohide="false" style="position: absolute; top: 0; right: 0;">
+            <div class="toast-header">
+                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                <rect fill="#007aff" width="100%" height="100%" /></svg>
+                <strong class="mr-auto">Toyota</strong>
+                <small class="text-muted">1 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+            </div>
+            <div class="toast-body">
+                Đăng kí thành công !
+            </div>
+            </div>
         <footer id="footer" class="w-100 d-flex justify-content-center align-items-center">
             <span>© Bản quyền thuộc về công ty TOYOTA Việt Nam</span>
         </footer>
 
     </div>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script src="{{ asset('js/index.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
+    <script>
+        $('body').on('click', '.save-data', function(e){
+            e.preventDefault();
+            let province = $(this).parent().find("select[name='province']").val();
+            let dealer =  $(this).parent().find("select[name='dealer']").val();
+            let name = $(this).parent().find("input[name='name']").val();
+            let phone = $(this).parent().find("input[name='phone']").val();
+            let email = $(this).parent().find("input[name='email']").val();
+            let to_buy =  $(this).parent().find("select[name='to_buy']").val();
+            let url = '{{ route('save-customer') }}';
+            
+            let data = {
+                _token: "{{ csrf_token() }}",
+                province: province,
+                dealer: dealer,
+                firstName: name,
+                phoneNumber: phone,
+                email: email,
+                whenCustomerWantToBuy: (to_buy) ? to_buy : "Chưa xác định"
+            }
+            if (province.length == 0) {
+                alert('Vui lòng chọn tỉnh/ thành phố!')
+                return
+            }
+            if (dealer.length == 0) {
+                alert('Vui lòng chọn đại lý!')
+                return
+            }
+            if (name.length == 0) {
+                alert('Vui lòng nhập họ tên!')
+                return
+            }
+            var filter = /^[0-9]{9,13}$/;
+            if (!filter.test(phone)) {
+                alert('Số điện thoại phải là số và lớn hơn 9 kí tự!')
+                return
+            }
+            
+            saveData(url, data);
+        })
+        function saveData(url, data) {
+            $.ajax({
+                url: url,
+                data: data,
+                method: "POST",
+                success: function(result) {
+                    console.log(result.result.statusCode);
+                    if (result.result.statusCode == 200) {
+                        $("form")[0].reset();
+                        $("form")[1].reset();
+                        // $('.toast').toast('show')
+                        alert('Đăng kí thành công !')
+                    } else {
+                        alert(result.result.message)
+                    }
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
     <script>
         AOS.init();
     </script>

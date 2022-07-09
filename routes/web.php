@@ -19,3 +19,4 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [HomeController::class, 'index']);
+Route::post('/', [HomeController::class, 'saveData'])->name('save-customer');
