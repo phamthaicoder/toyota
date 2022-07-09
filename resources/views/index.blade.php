@@ -140,7 +140,9 @@
                                                         <select id="form-select" class="form-select" name="dealer">
                                                             <option value="">Đại lý liên hệ</option>
                                                             @foreach ($dealer as $itemdealer)
-                                                                <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                                @if($itemdealer['dealerName'])
+                                                                    <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                                @endif
                                                             @endforeach
                                                         </select>
                                                     </div>
@@ -998,7 +1000,9 @@
                                             <select id="form-select" class="form-select" name="dealer">
                                                 <option value="">Đại lý liên hệ</option>
                                                 @foreach ($dealer as $itemdealer)
-                                                 <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                    @if($itemdealer['dealerName'])
+                                                        <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
+                                                    @endif
                                                 @endforeach
                                             </select>
                                         </div>
