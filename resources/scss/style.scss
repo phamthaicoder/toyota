@@ -1,0 +1,21 @@
+// THE 7-1 PATTERNED STRUCTURE
+
+@import 'ultilities/variables';
+@import 'ultilities/mixins';
+
+@import 'base/common';
+@import 'base/responsive';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/slider';
+@import 'components/button';
+@import 'components/dropdown';
+@import 'components/breadcrumb';
+@import 'components/animation';
+
+@import 'pages/home';

@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth !important;
+    overflow-y: visible !important;
+}
+
+body {
+    width: 100%;
+}
+
+#toolModal {
+    form {
+        .form-title {
+            color: $color-primary;
+            font-weight: 600;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        label {
+            color: $color-black;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .input-group {
+            margin-bottom: 24px;
+            .input-group-text {
+                background-color: $color-white;
+                border-right: none;
+            }
+        }
+
+        input, select {
+            height: 64px;
+            border-left: 0;
+        }
+
+        .form-action {
+            background-color: $color-primary;
+            padding: 10px 0;
+            button {
+                padding: 0;
+                margin: 0;
+                color: $color-white;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// body::-webkit-scrollbar {
+//     display: none; /* for Chrome, Safari, and Opera */
+//   }
+
+
+
+@media (min-width: 1319.98px) {
+    .container {
+        max-width: 1100px !important;
+    }
+}
+@media (min-width: 1419.98px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+@media (min-width: 1519.98px) {
+    .container {
+        max-width: 1300px !important;
+    }
+}
+@media (min-width: 1619.98px) {
+    .container {
+        max-width: 1400px !important;
+    }
+}
+@media (min-width: 1719.98px) {
+    .container {
+        max-width: 1500px !important;
+    }
+}
+@media (min-width: 1819.98px) {
+    .container {
+        max-width: 1600px !important;
+    }
+}
+@media (min-width: 1919.98px) {
+    .container {
+        max-width: 1544px !important;
+    }
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+}
+
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// `xs` returns only a ruleset and no media query
+// ... { ... }

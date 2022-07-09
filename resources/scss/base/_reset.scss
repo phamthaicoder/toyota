@@ -1,0 +1,17 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, select {
+    &:focus,
+    &:active,
+    &.active {
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+}
