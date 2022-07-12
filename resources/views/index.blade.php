@@ -191,7 +191,7 @@
                                                         <select id="form-select" class="form-select" name="to_buy">
                                                             <option value="">Dự định mua xe</option>
                                                             @foreach ($toBuy as $itemToBuy)
-                                                                <option value="{{ $itemToBuy['code'] }}">{{ $itemToBuy['name'] }}</option>
+                                                                <option value="{{ $itemToBuy['name'] }}">{{ $itemToBuy['name'] }}</option>
                                                             @endforeach
                                                         </select>
                                                     </div>
