@@ -65,7 +65,6 @@
                             <img src="{{ asset('img/general/global.svg') }}" alt="">
                         </a>
                     </div>
-
                     <!-- Modal -->
                     <div class="modal fade" id="toolModal" tabindex="-1" aria-labelledby="toolModalLabel"
                         aria-hidden="true">
@@ -79,6 +78,7 @@
                                     <div class="row align-items-center">
                                         <form class="col-md-6">
                                             <h1 class="form-title">Đăng ký lái thử xe</h1>
+                                            
                                             <div class="row">
                                                 <div class="col">
                                                     <label for="form-select" class="form-label">Tỉnh / Thành
@@ -89,45 +89,9 @@
                                                         </span>
                                                         <select id="form-select" class="form-select" name="province">
                                                             <option value="">Chọn tỉnh / thành phố</option>
-                                                            <option value="An Giang">An Giang</option>
-                                                            <option value="Bac Giang">Bắc Giang</option>
-                                                            <option value="Bac Ninh">Bắc Ninh</option>
-                                                            <option value="Ha Noi">Hà Nội</option>
-                                                            <option value="Hai Duong">Hải Dương</option>
-                                                            <option value="Hai Phong">Hải Phòng</option>
-                                                            <option value="Hoa Binh">Hòa Bình</option>
-                                                            <option value="Lao Cai">Lào Cai</option>
-                                                            <option value="Nam Dinh">Nam Dịnh</option>
-                                                            <option value="Phu Tho">Phú Thọ</option>
-                                                            <option value="Quang Ninh">Quảng Ninh</option>
-                                                            <option value="Son La">Sơn La</option>
-                                                            <option value="Thai Nguyen">Thái Nguyên</option>
-                                                            <option value="Thai Binh">Thái Bình</option>
-                                                            <option value="Hung Yen">Hưng Yên</option>
-                                                            <option value="Vinh Phuc">Vĩnh Phúc</option>
-                                                            <option value="Hai Phong">Hải Phòng</option>
-                                                            <option value="Binh Dinh">Bình Định</option>
-                                                            <option value="Binh Thuan">Bình Thuận</option>
-                                                            <option value="Da Nang">Đà Nẵng</option>
-                                                            <option value="Dak Lak">Dak Lak</option>
-                                                            <option value="Gia Lai">Gia Lai</option>
-                                                            <option value="Ha Tinh">Hà Tĩnh</option>
-                                                            <option value="Nghe An">Nghệ An</option>
-                                                            <option value="Khanh Hoa">Khánh Hòa</option>
-                                                            <option value="Phu Yen">Phú Yên</option>
-                                                            <option value="HCM">Hồ Chí Minh</option>
-                                                            <option value="Thanh Hoa">Thanh Hóa</option>
-                                                            <option value="Can Tho">Cần Thơ</option>
-                                                            <option value="BRVT">Bà Rịa Vũng Tàu</option>
-                                                            <option value="Binh Duong">Bình Dương</option>
-                                                            <option value="Binh Phuoc">Bình Phước</option>
-                                                            <option value="Dong Nai">Đòng Nai</option>
-                                                            <option value="Long An">Long An</option>
-                                                            <option value="Tay Ninh">Tây Ninh</option>
-                                                            <option value="Tien Giang">Tiền Giang</option>
-                                                            <option value="Vinh Long">Vĩnh Long</option>
-                                                            <option value="Ben Tre">Bến Tre</option>
-                                                            <option value="Ca Mau">Cà Mau</option>
+                                                            @foreach ($province as $itemProvince)
+                                                                <option value="{{ $itemProvince['id'] }}">{{ $itemProvince['name'] }}</option>
+                                                            @endforeach
                                                         </select>
                                                     </div>
                                                 </div>
@@ -139,11 +103,6 @@
                                                         </span>
                                                         <select id="form-select" class="form-select" name="dealer">
                                                             <option value="">Đại lý liên hệ</option>
-                                                            @foreach ($dealer as $itemdealer)
-                                                                @if($itemdealer['dealerName'])
-                                                                    <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
-                                                                @endif
-                                                            @endforeach
                                                         </select>
                                                     </div>
                                                 </div>
@@ -949,45 +908,9 @@
                                             </span>
                                             <select id="form-select" class="form-select" name="province">
                                                 <option value="">Chọn tỉnh / thành phố</option>
-                                                <option value="An Giang">An Giang</option>
-                                                <option value="Bac Giang">Bắc Giang</option>
-                                                <option value="Bac Ninh">Bắc Ninh</option>
-                                                <option value="Ha Noi">Hà Nội</option>
-                                                <option value="Hai Duong">Hải Dương</option>
-                                                <option value="Hai Phong">Hải Phòng</option>
-                                                <option value="Hoa Binh">Hòa Bình</option>
-                                                <option value="Lao Cai">Lào Cai</option>
-                                                <option value="Nam Dinh">Nam Dịnh</option>
-                                                <option value="Phu Tho">Phú Thọ</option>
-                                                <option value="Quang Ninh">Quảng Ninh</option>
-                                                <option value="Son La">Sơn La</option>
-                                                <option value="Thai Nguyen">Thái Nguyên</option>
-                                                <option value="Thai Binh">Thái Bình</option>
-                                                <option value="Hung Yen">Hưng Yên</option>
-                                                <option value="Vinh Phuc">Vĩnh Phúc</option>
-                                                <option value="Hai Phong">Hải Phòng</option>
-                                                <option value="Binh Dinh">Bình Định</option>
-                                                <option value="Binh Thuan">Bình Thuận</option>
-                                                <option value="Da Nang">Đà Nẵng</option>
-                                                <option value="Dak Lak">Dak Lak</option>
-                                                <option value="Gia Lai">Gia Lai</option>
-                                                <option value="Ha Tinh">Hà Tĩnh</option>
-                                                <option value="Nghe An">Nghệ An</option>
-                                                <option value="Khanh Hoa">Khánh Hòa</option>
-                                                <option value="Phu Yen">Phú Yên</option>
-                                                <option value="HCM">Hồ Chí Minh</option>
-                                                <option value="Thanh Hoa">Thanh Hóa</option>
-                                                <option value="Can Tho">Cần Thơ</option>
-                                                <option value="BRVT">Bà Rịa Vũng Tàu</option>
-                                                <option value="Binh Duong">Bình Dương</option>
-                                                <option value="Binh Phuoc">Bình Phước</option>
-                                                <option value="Dong Nai">Đòng Nai</option>
-                                                <option value="Long An">Long An</option>
-                                                <option value="Tay Ninh">Tây Ninh</option>
-                                                <option value="Tien Giang">Tiền Giang</option>
-                                                <option value="Vinh Long">Vĩnh Long</option>
-                                                <option value="Ben Tre">Bến Tre</option>
-                                                <option value="Ca Mau">Cà Mau</option>
+                                                @foreach ($province as $itemProvince)
+                                                    <option value="{{ $itemProvince['id'] }}">{{ $itemProvince['name'] }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -999,11 +922,6 @@
                                             </span>
                                             <select id="form-select" class="form-select" name="dealer">
                                                 <option value="">Đại lý liên hệ</option>
-                                                @foreach ($dealer as $itemdealer)
-                                                    @if($itemdealer['dealerName'])
-                                                        <option value="{{ $itemdealer['dealerAbbreviations'] }}">{{ $itemdealer['dealerName'] }}</option>
-                                                    @endif
-                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -1143,17 +1061,43 @@
             
             saveData(url, data);
         })
+        $('body').on('change', "select[name='province']", function() {
+            let urlProvince = '{{ route('province') }}'
+            let _this = $(this);
+            $.ajax({
+                url: urlProvince,
+                data: {province:$(this).val()},
+                method: "GET",
+                success: function(result) {
+                    var html = '';
+                    if (result.length > 0) {
+                        for (let i = 0; i < result.length; i++) {
+                            if (result[i]['name']) {
+                                html += '<option value="'+ result[i]['abbreviation'] +'">'+ result[i]['name'] +'</option>'
+                            }
+                        }
+                        _this.parent().parent().parent().find("select[name='dealer']").find('option').remove().end().append(html);
+                    } else {
+                        html = '<option value="">Đại lý liên hệ</option>'
+                        _this.parent().parent().parent().find("select[name='dealer']").find('option').remove().end().append(html);
+                    }
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        })
         function saveData(url, data) {
             $.ajax({
                 url: url,
                 data: data,
                 method: "POST",
                 success: function(result) {
-                    console.log(result.result.statusCode);
                     if (result.result.statusCode == 200) {
                         $("form")[0].reset();
                         $("form")[1].reset();
-                        // $('.toast').toast('show')
+                        html = '<option value="">Đại lý liên hệ</option>'
+                        $("select[name='dealer']").find('option').remove().end().append(html);
                         alert('Đăng kí thành công !')
                     } else {
                         alert(result.result.message)
