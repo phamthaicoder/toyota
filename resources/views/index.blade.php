@@ -52,13 +52,13 @@
                         <img src="{{ asset('img/general/icon-button.svg') }}" alt="">
                     </div>
                     <div class="d-flex flex-column tool">
-                        <a class="btn">
+                        <a id="scroll-to-top" class="btn">
                             <img src="{{ asset('img/general/arrow-up.svg') }}" alt="">
                         </a>
                         <a class="btn" data-bs-toggle="modal" data-bs-target="#toolModal">
                             <img src="./img/general/wheel.svg" alt="">
                         </a>
-                        <a href="#introduction" class="btn">
+                        <a id="scroll-to-bottom" class="btn">
                             <img src="{{ asset('img/general/arrow-down.svg') }}" alt="">
                         </a>
                         <a href="https://www.toyota.com.vn/veloz-cross-cvt-top" target="_blank" class="btn">
@@ -78,7 +78,7 @@
                                     <div class="row align-items-center">
                                         <form class="col-md-6">
                                             <h1 class="form-title">Đăng ký lái thử xe</h1>
-                                            
+
                                             <div class="row">
                                                 <div class="col">
                                                     <label for="form-select" class="form-label">Tỉnh / Thành
@@ -140,7 +140,7 @@
                                                             placeholder="Nhập email">
                                                     </div>
                                                 </div>
-                                               
+
                                                 <div class="col">
                                                     <label for="form-select" class="form-label">Nhu cầu</label>
                                                     <div class="input-group">
@@ -877,17 +877,12 @@
 
         <section id="footer-banner" class="footer-banner">
             <img class="background" src="{{ asset('img/home/toyota-straight.JPG') }}" alt="">
-            <div class="h-100 d-flex flex-column justify-content-around align-items-center">
-                <div class=""></div>
-                <div class=""></div>
-                <div class="">
-                    <img class="logo-section" src="{{ asset('img/general/logo-section.svg') }}" alt="">
-                </div>
+            <div class="h-100 d-flex flex-column justify-content-end align-items-center">
                 <div class="link">
                     <a href="#">
                         Hãy cùng nhau chờ đón câu chuyện tiếp theo
                     </a>
-                    <img src="./img/general/arrow-right.svg" alt="">
+                    <img src="{{ asset('/img/general/arrow-right.svg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -925,9 +920,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                 
+
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="col">
                                         <label for="name" class="form-label">Họ và tên*</label>
@@ -1016,7 +1011,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script src="{{ asset('js/index.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -1031,7 +1026,7 @@
             let email = $(this).parent().find("input[name='email']").val();
             let to_buy =  $(this).parent().find("select[name='to_buy']").val();
             let url = '{{ route('save-customer') }}';
-            
+
             let data = {
                 _token: "{{ csrf_token() }}",
                 province: province,
@@ -1058,7 +1053,7 @@
                 alert('Số điện thoại phải là số và lớn hơn 9 kí tự!')
                 return
             }
-            
+
             saveData(url, data);
         })
         $('body').on('change', "select[name='province']", function() {

@@ -39,7 +39,7 @@ sliderImageAll.forEach(function (sliderImage) {
 // const remove_class_on_scroll = () => {
 //     mondayAnimate.classList.remove("animate");
 // }
-// window.addEventListener('scroll', function() { 
+// window.addEventListener('scroll', function() {
 //     console.log(scrollpos, monday_height)
 //   if (scrollpos = monday_height) { add_class_on_scroll() }
 //   else { remove_class_on_scroll() };
@@ -75,6 +75,42 @@ modalAll.forEach(function (modal) {
   return modal.addEventListener('hide.bs.modal', function (event) {
     htmlElement.style.overflowY = "unset";
   });
+}); //Get the button
+
+var scrollToTopBtn = document.getElementById("scroll-to-top");
+var scrollToBottomBtn = document.getElementById("scroll-to-bottom"); // When the user scrolls down 1000px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+// function scrollFunction() {
+//   if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+//     scrollToTopBtn.style.display = "block";
+//   } else {
+//     scrollToTopBtn.style.display = "none";
+//   }
+// }
+// When the user clicks on the button, scroll to the top of the document
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+;
+
+function bottomFunction() {
+  document.getElementById('footer').scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+scrollToTopBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  topFunction();
+});
+scrollToBottomBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  bottomFunction();
 });
 /******/ })()
 ;

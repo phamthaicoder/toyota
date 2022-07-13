@@ -28,7 +28,7 @@
 @font-face {
     font-family: 'Toyota-Type';
     src: url('../../font/ToyotaType-Italic.ttf') format('truetype');
-    font-style: italic; 
+    font-style: italic;
 }
 
 @font-face {
@@ -53,4 +53,5 @@
 
 a {
     color: #fff !important;
+    text-decoration: none !important;
 }
