@@ -132,6 +132,7 @@ button:focus, button:active, button.active, input:focus, input:active, input.act
 
 a {
   color: #fff !important;
+  text-decoration: none !important;
 }
 
 #header .navbar {
@@ -252,6 +253,7 @@ a {
 #home #header .banner {
   position: absolute;
   width: 100%;
+  height: 120%;
   bottom: -130px;
   z-index: -1;
   filter: brightness(74%);
@@ -270,9 +272,10 @@ a {
   color: #fff;
 }
 #home #header .tool {
-  position: absolute;
-  bottom: 130px;
-  right: 0;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
   background-color: #231F20;
 }
 #home #header .tool img {
@@ -589,6 +592,7 @@ a {
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
+  margin-bottom: 60px;
 }
 #home #footer-banner .link:hover {
   background-color: #CE0402;
@@ -656,15 +660,17 @@ a {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1920.98px) and (min-height: 900.98px) {
+  #home #header .banner {
+    bottom: unset;
+  }
+}
 @media screen and (max-width: 1600.98px) and (max-height: 900.98px) {
   #home #header {
     height: 115vh;
   }
   #home #header .description {
     margin-bottom: 0;
-  }
-  #home #header .tool {
-    bottom: 114px;
   }
   #home .week .content .title {
     font-weight: 600;
@@ -689,7 +695,7 @@ a {
     margin-left: 10px;
   }
 }
-@media screen and (max-width: 1440.98px) and (max-height: 900.98px) {
+@media screen and (max-width: 1440.98px) and (max-height: 849.98px) {
   #home #header {
     height: 115vh;
   }
@@ -698,9 +704,6 @@ a {
   }
   #home #header .description {
     margin-bottom: 0;
-  }
-  #home #header .tool {
-    bottom: 114px;
   }
   #home #introduction .description {
     font-weight: 400;
@@ -735,7 +738,7 @@ a {
     height: 120vh;
   }
   #home #header .banner {
-    bottom: -80px;
+    bottom: -72px;
   }
   #home #header .title p {
     font-size: 60px;
@@ -750,11 +753,8 @@ a {
   #home #header .description img {
     height: 40px;
   }
-  #home #header .tool {
-    bottom: 125px;
-  }
   #home #header .tool img {
-    padding: 0;
+    padding: 5px;
   }
   #home #introduction .title {
     color: #CE0402;
@@ -765,6 +765,9 @@ a {
     font-weight: 400;
     font-size: 14px;
     margin: 0 40px;
+  }
+  #home .week {
+    padding: 150px 0;
   }
   #home .week .content .title {
     font-weight: 600;
