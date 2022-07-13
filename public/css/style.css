@@ -781,6 +781,9 @@ a {
     height: 63px;
     width: 95px;
   }
+  #home .week .modal .modal-dialog .modal-content {
+    width: 75%;
+  }
   #home .week:nth-of-type(even) .content {
     padding-right: 44px;
   }

@@ -327,36 +327,36 @@
         </section>
 
         <section id="tuesday" class="week tuesday">
-            <img class="background-section" src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
+            <img class="background-section" src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-7">
                         <div class="image" data-aos="fade-left" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
+                            <img class="image-main" src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
                             <div class="slider d-flex justify-content-between">
                                 <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
                                     class="slider-image show active">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/3.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/tuesday/3.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/4.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/tuesday/4.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/5.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/tuesday/5.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/tuesday/6.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/1.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/tuesday/1.JPG') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -382,7 +382,7 @@
                                     để đời và ghi dấu ấn trong lòng khán giả. <br>
                                     Mọi người hay bảo vợ khuyên gì thì làm ngược lại. Còn mình thì cứ y lời vợ mà làm,
                                     có làm sao không cả nhà? Đi xe này cũng là vì vợ bảo xe này nghe tả hơi bị giống
-                                    anh: “trong tiện nghi, ngoài phong cách” ;)
+                                    anh: “trong tiện nghi, ngoài phong cách” ;
                                 </span>
                                 <p class="collapse" style="font-style: italic;">... Thu gọn</p>
                             </div>
@@ -402,22 +402,22 @@
                         <div id="tuesday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/tuesday/2.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/3.JPG') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/tuesday/3.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/4.JPG') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/tuesday/4.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/5.JPG') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/tuesday/5.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/tuesday/6.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/1.JPG') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/tuesday/1.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#tuesday-carousel"
@@ -468,11 +468,11 @@
                     </div>
                     <div class="col-md-7">
                         <div class="image" data-aos="fade-up" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
+                            <img class="image-main" src="{{ asset('img/home/saturday/2.JPG') }}" alt="">
                             <div class="slider d-flex justify-content-between">
                                 <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
                                     class="slider-image show active">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/saturday/2.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
                                     class="slider-image">
@@ -546,36 +546,36 @@
         </section>
 
         <section id="thursday" class="week thursday">
-            <img class="background-section" src="./img/home/sunday/4.JPG" alt="">
+            <img class="background-section" src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-7">
                         <div class="image" data-aos="fade-left" data-aos-duration="1000">
-                            <img class="image-main" src="./img/home/sunday/4.JPG" alt="">
+                            <img class="image-main" src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
                             <div class="slider">
                                 <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
                                     class="slider-image show active">
-                                    <img src="./img/home/sunday/4.JPG" alt="">
+                                    <img src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/sunday/2.JPG" alt="">
+                                    <img src="{{ asset('img/home/sunday/2.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/sunday/3.JPG" alt="">
+                                    <img src="{{ asset('img/home/sunday/3.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/sunday/1.JPG" alt="">
+                                    <img src="{{ asset('img/home/sunday/1.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/sunday/5.JPG" alt="">
+                                    <img src="{{ asset('img/home/sunday/5.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/sunday/6.JPG" alt="">
+                                    <img src="{{ asset('img/home/sunday/6.JPG') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -624,22 +624,22 @@
                         <div id="thursday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="./img/home/sunday/4.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/sunday/4.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/sunday/2.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/sunday/2.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/sunday/3.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/sunday/3.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/sunday/1.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/sunday/1.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/sunday/5.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/sunday/5.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/sunday/6.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/sunday/6.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#thursday-carousel"
@@ -659,7 +659,7 @@
         </section>
 
         <section id="friday" class="week friday">
-            <img class="background-section" src="./img/home/friday/3.JPG" alt="">
+            <img class="background-section" src="{{ asset('img/home/friday/3.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-5">
@@ -693,27 +693,27 @@
                     </div>
                     <div class="col-md-7">
                         <div class="image" data-aos="fade-right" data-aos-duration="1000">
-                            <img class="image-main" src="./img/home/friday/3.JPG" alt="">
+                            <img class="image-main" src="{{ asset('img/home/friday/3.JPG') }}" alt="">
                             <div class="slider">
                                 <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
                                     class="slider-image show active">
-                                    <img src="./img/home/friday/3.JPG" alt="">
+                                    <img src="{{ asset('img/home/friday/3.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/friday/2.JPG" alt="">
+                                    <img src="{{ asset('img/home/friday/2.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/friday/1.JPG" alt="">
+                                    <img src="{{ asset('img/home/friday/1.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/friday/4.JPG" alt="">
+                                    <img src="{{ asset('img/home/friday/4.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/friday/5.JPG" alt="">
+                                    <img src="{{ asset('img/home/friday/5.JPG') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -732,19 +732,19 @@
                         <div id="friday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="./img/home/friday/3.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/friday/3.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/friday/2.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/friday/2.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/friday/1.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/friday/1.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/friday/4.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/friday/4.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/home/friday/5.JPG" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/friday/5.JPG') }}" class="carousel-image" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#friday-carousel"
@@ -764,16 +764,16 @@
         </section>
 
         <section id="saturday" class="week saturday">
-            <img class="background-section" src="{{ asset('img/home/wednesday/2.JPG') }}" alt="">
+            <img class="background-section" src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-7">
                         <div class="image" data-aos="fade-up" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/wednesday/2.JPG') }}" alt="">
+                            <img class="image-main" src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
                             <div class="slider d-flex">
                                 <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
                                     class="slider-image show active">
-                                    <img src="{{ asset('img/home/wednesday/2.JPG') }}" alt="">
+                                    <img src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
                                     class="slider-image">
@@ -793,7 +793,7 @@
                                 </a>
                                 <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
                                     class="slider-image">
-                                    <img src="./img/home/wednesday/1.JPG" alt="">
+                                    <img src="{{ asset('img/home/wednesday/1.JPG') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -817,11 +817,11 @@
                                     không nói làm gì. Sự khác biệt của mình là tết dương, tết âm, tết hàn thực, ông công
                                     ông táo, rằm tháng 7, trung thu, 1/6, 20/6, 20/11…vợ cũng được nhận quà.
                                     Một trong những lý do mình chọn Veloz Cross là vì cốp xe siêu rộng, mỗi lần mua quà
-                                    tặng vợ là thoải mái “ship” quà về dù quà có to hay nhiều đến đâu ;)<br>
+                                    tặng vợ là thoải mái “ship” quà về dù quà có to hay nhiều đến đâu ;<br>
                                     Thật ra, đó là…sự đầu tư cho niềm vui mọi người ạ. Điều gì làm nàng vui và bất ngờ
                                     thì mình sẽ luôn cố gắng thực hiện. Khi mẹ vui, cả nhà mới vui được.<br>
                                     Chip Bon có lần comment “Bố đúng là ngoài đẹp trai, trong chiều vợ”. Chịu khó chọn
-                                    quà rồi được thấy vợ vui, con khen thì cũng thấy khá xứng đáng ;)
+                                    quà rồi được thấy vợ vui, con khen thì cũng thấy khá xứng đáng ;
                                 </span>
                                 <p class="collapse" style="font-style: italic;">... Thu gọn</p>
                             </div>
