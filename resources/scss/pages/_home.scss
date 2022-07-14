@@ -43,6 +43,14 @@
                 }
             }
         }
+        .modal {
+            .modal-content {
+                .modal-header {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
     }
 
     #introduction {
@@ -78,13 +86,13 @@
             .title {
                 color: $color-white;
                 font-weight: 600;
-                font-size: 30px;
+                font-size: 28px;
                 text-transform: uppercase;
             }
             .description {
                 color: $color-white;
                 font-weight: 100;
-                font-size: 20px;
+                font-size: 19px;
                 position: relative;
                 text-align: justify;
                 letter-spacing: 1px;
@@ -178,18 +186,12 @@
 
     .background-section {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        // height: 100%;
         z-index: -1;
         filter: brightness(40%);
         display: block;
         top: 0;
-    }
-
-    #monday-carousel, #tuesday-carousel, #wednesday-carousel, #thursday-carousel, #friday-carousel, #saturday-carousel, #sunday-carousel {
-        img {
-            filter: brightness(80%);
-        }
     }
 
     #monday {
@@ -349,40 +351,6 @@
         }
     }
 
-    #sunday {
-        .image {
-            position: relative;
-            .slider {
-                position: absolute;
-                background-color: $color-white;
-                padding: 8px;
-                left: -10%;
-                bottom: 1.5%;
-                .slider-image {
-                    border: none;
-                    background: none;
-                    filter: brightness(60%);
-                    padding-bottom: 8px;
-                    display: block;
-                    img {
-                        width: 140px;
-                        height: 90px;
-                    }
-                    &.active {
-                        filter: none;
-                        img {
-                            padding: 2px;
-                            background-image: linear-gradient(180deg, $color-white, $color-primary);
-                        }
-                    }
-                }
-                &:last-child {
-                    padding-bottom: 0px;
-                }
-            }
-        }
-    }
-
     #footer-banner {
         height: 100vh;
         overflow: hidden;
@@ -494,6 +462,7 @@
             }
         }
         .week {
+            padding: 120px 0;
             .content {
                 .title {
                     font-weight: 600;
@@ -523,6 +492,13 @@
                     padding-left: 80px;
                 }
             }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 75%;
+                    }
+                }
+            }
         }
         #footer-banner {
             .logo-section {
@@ -534,12 +510,12 @@
     }
 }
 
-@media screen and (max-width: 1440.98px) and (max-height: 849.98px) {
+@media screen and (max-width: 1440.98px) and (max-height: 900.98px) {
     #home {
         #header {
             height: 115vh;
             .banner {
-                bottom: unset;
+                bottom: -120px;
             }
             .description {
                 margin-bottom: 0;
@@ -553,6 +529,7 @@
             }
         }
         .week {
+            padding: 155px 0;
             .content {
                 .title {
                     font-weight: 600;
@@ -580,6 +557,13 @@
             &:nth-of-type(odd) {
                 .content {
                     padding-left: 54px;
+                }
+            }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 90%;
+                    }
                 }
             }
         }
@@ -655,13 +639,6 @@
                     }
                 }
             }
-            .modal {
-                .modal-dialog {
-                    .modal-content {
-                        width: 75%;
-                    }
-                }
-            }
             &:nth-of-type(even) {
                 .content {
                     padding-right: 44px;
@@ -670,6 +647,13 @@
             &:nth-of-type(odd) {
                 .content {
                     padding-left: 44px;
+                }
+            }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 75%;
+                    }
                 }
             }
         }
@@ -737,4 +721,3 @@
 @media screen and (max-width: 1280.98px) and (max-height: 720.98px)  {
 
 }
-

@@ -68,7 +68,7 @@
                     <!-- Modal -->
                     <div class="modal fade" id="toolModal" tabindex="-1" aria-labelledby="toolModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xxl-down">
+                        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xxl">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -282,13 +282,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal -->
             <div class="modal fade" id="mondayModal" tabindex="-1" aria-labelledby="mondayModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="mondayModalLabel">Hình chi tiết</h5> -->
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -326,7 +324,7 @@
             </div>
         </section>
 
-        <section id="tuesday" class="week tuesday">
+        {{-- <section id="tuesday" class="week tuesday">
             <img class="background-section" src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -395,7 +393,6 @@
                 <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="tuesdayModalLabel">Hình chi tiết</h5> -->
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -434,9 +431,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section id="wednesday" class="week wednesday">
+        {{-- <section id="wednesday" class="week wednesday">
             <img class="background-section" src="{{ asset('img/home/saturday/2.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -543,9 +540,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section id="thursday" class="week thursday">
+        {{-- <section id="thursday" class="week thursday">
             <img class="background-section" src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -656,9 +653,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section id="friday" class="week friday">
+        {{-- <section id="friday" class="week friday">
             <img class="background-section" src="{{ asset('img/home/friday/3.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -761,9 +758,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section id="saturday" class="week saturday">
+        {{-- <section id="saturday" class="week saturday">
             <img class="background-section" src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -873,7 +870,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <section id="footer-banner" class="footer-banner">
             <img class="background" src="{{ asset('img/home/toyota-straight.JPG') }}" alt="">
