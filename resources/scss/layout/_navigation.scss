@@ -2,6 +2,10 @@
     .navbar {
         margin-top: 40px;
         padding: 0;
+        .navbar-toggler {
+            border: none;
+            padding-right: 0;
+        }
         .navbar-nav {
             .nav-item {
                 &:not(:last-child) {
@@ -54,6 +58,60 @@
     }
 }
 
+@media screen and (max-width: 992.98px)  {
+    #header {
+        .navbar {
+            .navbar-nav {
+                align-items: flex-end;
+                .nav-item {
+                    &:not(:last-child) {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480.98px)  {
+    #header {
+        .navbar {
+            .navbar-brand {
+                img {
+                    width: 110px;
+                }
+            }
+            .navbar-nav {
+                .nav-item {
+                    &:not(:last-child) {
+                    }
+                    .nav-link {
+                        font-weight: 100;
+                        font-size: 16px;
+                        &:hover {
+                            border-bottom: 3px solid $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414.98px)  {
+
+}
+
+@media screen and (max-width: 375.98px)  {
+
+}
+
+@media screen and (max-width: 360.98px)  {
+
+}
+
+
+
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
 
@@ -72,7 +130,7 @@
 
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    
+
 }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)

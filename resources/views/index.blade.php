@@ -27,7 +27,8 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                {{-- <span class="navbar-toggler-icon"></span> --}}
+                                <img src="{{ asset('img/general/icon-menu-toggle.svg') }}" alt="">
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -51,7 +52,7 @@
                         <p>Kéo xuống để khám phá câu chuyện</p>
                         <img src="{{ asset('img/general/icon-button.svg') }}" alt="">
                     </div>
-                    <div class="d-flex flex-column tool">
+                    <div class="tool">
                         <a id="scroll-to-top" class="btn">
                             <img src="{{ asset('img/general/arrow-up.svg') }}" alt="">
                         </a>
@@ -80,7 +81,7 @@
                                             <h1 class="form-title">Đăng ký lái thử xe</h1>
 
                                             <div class="row">
-                                                <div class="col">
+                                                <div class="col-md-6 col-12">
                                                     <label for="form-select" class="form-label">Tỉnh / Thành
                                                         phố*</label>
                                                     <div class="input-group">
@@ -95,7 +96,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-md-6 col-12">
                                                     <label for="form-select" class="form-label">Đại lý liên hệ*</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text">
@@ -108,7 +109,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col">
+                                                <div class="col-md-6 col-12">
                                                     <label for="name" class="form-label">Họ và tên*</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text">
@@ -118,7 +119,7 @@
                                                             placeholder="Nhập họ và tên">
                                                     </div>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-md-6 col-12">
                                                     <label for="phone" class="form-label">Số điện thoại*</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text">
@@ -130,7 +131,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col">
+                                                <div class="col-md-6 col-12">
                                                     <label for="email" class="form-label">Email</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text">
@@ -141,7 +142,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col">
+                                                <div class="col-md-6 col-12">
                                                     <label for="form-select" class="form-label">Nhu cầu</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text">
@@ -191,22 +192,22 @@
                         gia đình.
                     </p>
                     <div class="row">
-                        <a href="#monday" class="col-xl-2 col-lg-4 col-md-6 mt-2">
+                        <a href="#monday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
                             <img class="thumb" src="{{ asset('img/home/thumb-1.png') }}" alt="">
                         </a>
-                        <a href="#tuesday" class="col-xl-2 col-lg-4 col-md-6 mt-2">
+                        <a href="#tuesday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
                             <img class="thumb" src="{{ asset('img/home/thumb-2.png') }}" alt="">
                         </a>
-                        <a href="#wednesday" class="col-xl-2 col-lg-4 col-md-6 mt-2">
+                        <a href="#wednesday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
                             <img class="thumb" src="{{ asset('img/home/thumb-3.png') }}" alt="">
                         </a>
-                        <a href="#thursday" class="col-xl-2 col-lg-4 col-md-6 mt-2">
+                        <a href="#thursday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
                             <img class="thumb" src="{{ asset('img/home/thumb-4.png') }}" alt="">
                         </a>
-                        <a href="#friday" class="col-xl-2 col-lg-4 col-md-6 mt-2">
+                        <a href="#friday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
                             <img class="thumb" src="{{ asset('img/home/thumb-5.png') }}" alt="">
                         </a>
-                        <a href="#saturday" class="col-xl-2 col-lg-4 col-md-6 mt-2">
+                        <a href="#saturday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
                             <img class="thumb" src="{{ asset('img/home/thumb-6.png') }}" alt="">
                         </a>
                     </div>
@@ -874,6 +875,7 @@
 
         <section id="footer-banner" class="footer-banner">
             <img class="background" src="{{ asset('img/home/toyota-straight.JPG') }}" alt="">
+            <img class="background small" src="{{ asset('img/home/toyota-straight-small.JPG') }}" alt="">
             <div class="h-100 d-flex flex-column justify-content-end align-items-center">
                 <div class="link">
                     <a href="#">
@@ -892,7 +894,7 @@
                             <div class="form">
                                 <h1 class="form-title">Đăng ký lái thử xe</h1>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-md-6 col-12">
                                         <label for="form-select" class="form-label">Tỉnh / Thành phố*</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
@@ -906,7 +908,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-6 col-12">
                                         <label for="form-select" class="form-label">Đại lý liên hệ*</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
@@ -917,11 +919,9 @@
                                             </select>
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-md-6 col-12">
                                         <label for="name" class="form-label">Họ và tên*</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
@@ -931,7 +931,7 @@
                                                 placeholder="Nhập họ và tên">
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-6 col-12">
                                         <label for="phone" class="form-label">Số điện thoại*</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
@@ -943,7 +943,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-md-6 col-12">
                                         <label for="email" class="form-label">Email</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
@@ -953,7 +953,7 @@
                                                 placeholder="Nhập email">
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-6 col-12">
                                         <label for="form-select" class="form-label">Nhu cầu</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
