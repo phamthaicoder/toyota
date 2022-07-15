@@ -875,7 +875,7 @@
 
         <section id="footer-banner" class="footer-banner">
             <img class="background" src="{{ asset('img/home/toyota-straight.JPG') }}" alt="">
-            <img class="background small" src="{{ asset('img/home/toyota-straight-small.JPG') }}" alt="">
+            <img class="background small" src="{{ asset('img/home/toyota-straight-small.jpg') }}" alt="">
             <div class="h-100 d-flex flex-column justify-content-end align-items-center">
                 <div class="link">
                     <a href="#">
