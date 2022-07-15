@@ -896,15 +896,15 @@ a {
   #home .week:nth-of-type(odd) .content {
     padding-left: 0;
   }
+  #home .week .modal .modal-dialog .modal-content {
+    width: 90%;
+  }
   #home .week .modal .modal-dialog .modal-content .carousel .carousel-inner {
     display: flex;
     align-items: center;
   }
   #home .week .modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item {
     height: unset;
-  }
-  #home .week .modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item img {
-    height: 50%;
   }
   #home .background-section {
     position: absolute;
