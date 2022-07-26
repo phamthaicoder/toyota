@@ -667,7 +667,7 @@
             </div>
         </section>
 
-        {{-- <section id="friday" class="week friday">
+        <section id="friday" class="week friday">
             <img class="background-section" src="{{ asset('img/home/friday/3.JPG') }}" alt="">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -770,7 +770,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
 
         {{-- <section id="saturday" class="week saturday">
             <img class="background-section" src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
