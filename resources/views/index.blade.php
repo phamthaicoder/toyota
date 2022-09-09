@@ -994,12 +994,12 @@
                                 <span style="color: #596780;">Huế</span>
                             </div>
                             <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
-                                <img src="{{ asset('img/home/story-1.png') }}" class="d-block w-100" alt="...">
+                                <img src="{{ asset('img/home/story-2.png') }}" class="d-block w-100" alt="...">
                                 <p style="margin: 32px 0 8px 0; font-weight: 600">Andy Minh Phương</p>
                                 <span style="color: #596780;">Cần Thơ</span>
                             </div>
                             <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
-                                <img src="{{ asset('img/home/story-1.png') }}" class="d-block w-100" alt="...">
+                                <img src="{{ asset('img/home/story-3.png') }}" class="d-block w-100" alt="...">
                                 <p style="margin: 32px 0 8px 0; font-weight: 600">Tú Trân</p>
                                 <span style="color: #596780;">Cần Thơ</span>
                             </div>
