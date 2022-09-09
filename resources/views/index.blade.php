@@ -884,6 +884,138 @@
             </div>
         </section>
 
+        <section id="summarySection" class="summarySection">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="w-100" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="title">FAMILY ON THE WAY</p>
+                    <p class="description mb-5">Khám phá câu chuyện gia đình trên hành trình đồng hành cùng Veloz Cross </p>
+                    <div class="image"  data-aos="fade-left" data-aos-duration="1000">
+                        <img class="image-main" src="{{ asset('img/home/saturday/2.JPG') }}" alt="" style="max-width: 100%; max-height: 100%">
+                        <div class="slider">
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image slider-image show active">
+                                <img src="{{ asset('img/home/thumb-1.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/thumb-2.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/thumb-3.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/thumb-4.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/thumb-5.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/thumb-6.png') }}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="responsive">
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
+                                <img class="thumb" src="{{ asset('img/home/thumb-1.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
+                                <img class="thumb" src="{{ asset('img/home/thumb-2.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
+                                <img class="thumb" src="{{ asset('img/home/thumb-3.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
+                                <img class="thumb" src="{{ asset('img/home/thumb-4.png') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
+                                <img class="thumb" src="{{ asset('img/home/thumb-5.png') }}" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="saturdayModal" tabindex="-1" aria-labelledby="saturdayModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <h5 class="modal-title" id="saturdayModalLabel">Hình chi tiết</h5> -->
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div id="saturday-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('img/home/thumb-1.png') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/thumb-2.png') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/thumb-3.png') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/thumb-4.png') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/thumb-5.png') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/thumb-6.png') }}" class="carousel-image" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#saturday-carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#saturday-carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story">
+            <div class="container h-100 d-flex align-items-center">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <p class="title">CÂU CHUYỆN KHÁCH HÀNG</p>
+                    <p class="description mb-5">
+                        Sở hữu thiết kế hiện đại với nội thất tiện nghi, rộng rãi và ngập tràn trang bị công nghệ, Veloz Cross được đông đảo khách hàng tin tưởng lựa chọn. Cùng Toyota Việt Nam ghi lại những khoảnh khắc đáng nhớ của gia đình trên mọi hành trình và viết nên những câu chuyện ý nghĩa với Veloz Cross nhé!
+                    </p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="row d-flex flex-row carousel-item active">
+                            <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
+                                <img src="{{ asset('img/home/story-1.png') }}" class="d-block w-100" alt="...">
+                                <p style="margin: 32px 0 8px 0; font-weight: 600">Nguyễn Văn Tuấn</p>
+                                <span style="color: #596780;">Huế</span>
+                            </div>
+                            <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
+                                <img src="{{ asset('img/home/story-1.png') }}" class="d-block w-100" alt="...">
+                                <p style="margin: 32px 0 8px 0; font-weight: 600">Andy Minh Phương</p>
+                                <span style="color: #596780;">Cần Thơ</span>
+                            </div>
+                            <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
+                                <img src="{{ asset('img/home/story-1.png') }}" class="d-block w-100" alt="...">
+                                <p style="margin: 32px 0 8px 0; font-weight: 600">Tú Trân</p>
+                                <span style="color: #596780;">Cần Thơ</span>
+                            </div>
+                          </div>
+                        </div>
+                        <button style="position: absolute;bottom: 15%; left: -14%; opacity: unset;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <img src="{{ asset('img/general/icon-left.svg') }}" alt="">
+                        </button>
+                        <button style="position: absolute;bottom: 15%; right: -14%; opacity: unset;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <img src="{{ asset('img/general/icon-right.svg') }}" alt="">
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+
         <section id="footer-banner" class="footer-banner">
             <img class="background" src="{{ asset('img/home/toyota-straight.JPG') }}" alt="">
             <img class="background small" src="{{ asset('img/home/toyota-straight-small.jpg') }}" alt="">
