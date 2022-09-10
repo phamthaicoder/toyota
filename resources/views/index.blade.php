@@ -47,7 +47,7 @@
                                         <a class="nav-link" href="#introduction">CAR-TIME STORY</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">FAMILY ON THE WAY</a>
+                                        <a class="nav-link" href="#summarySection">FAMILY ON THE WAY</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">HÀNH TRÌNH KHÁCH HÀNG</a>
