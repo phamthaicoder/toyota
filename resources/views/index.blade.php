@@ -50,7 +50,7 @@
                                         <a class="nav-link" href="#summarySection">FAMILY ON THE WAY</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">HÀNH TRÌNH KHÁCH HÀNG</a>
+                                        <a class="nav-link" href="#story">HÀNH TRÌNH KHÁCH HÀNG</a>
                                     </li>
                                 </ul>
                             </div>
