@@ -601,8 +601,8 @@ a {
   display: block;
 }
 #home #summarySection .image .slider .slider-image img {
-  height: 93px;
-  width: 142px;
+  height: 100px;
+  width: 160px;
 }
 #home #summarySection .image .slider .slider-image.show {
   filter: none;
@@ -669,7 +669,7 @@ a {
   width: 3%;
 }
 #home #story {
-  padding: 120px 0;
+  padding: 50px 0;
   text-align: center;
 }
 #home #story .title {
@@ -1046,7 +1046,7 @@ a {
   }
   #home #summarySection .title {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
   }
   #home #summarySection .description {
     font-weight: 400;
@@ -1071,7 +1071,7 @@ a {
   }
   #home #story .title {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
   }
   #home #story .description {
     font-weight: 400;
