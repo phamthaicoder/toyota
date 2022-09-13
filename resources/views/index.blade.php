@@ -981,7 +981,7 @@
         <section id="story" class="story">
             <div class="container h-100 d-flex align-items-center">
                 <div data-aos="fade-up" data-aos-duration="1000">
-                    <p class="title">CÂU CHUYỆN KHÁCH HÀNG</p>
+                    <p class="title">HÀNH TRÌNH KHÁCH HÀNG</p>
                     <p class="description mb-5">
                         Sở hữu thiết kế hiện đại với nội thất tiện nghi, rộng rãi và ngập tràn trang bị công nghệ, Veloz Cross được đông đảo khách hàng tin tưởng lựa chọn. Cùng Toyota Việt Nam ghi lại những khoảnh khắc đáng nhớ của gia đình trên mọi hành trình và viết nên những câu chuyện ý nghĩa với Veloz Cross nhé!
                     </p>

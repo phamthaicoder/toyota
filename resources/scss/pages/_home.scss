@@ -387,8 +387,8 @@
                     padding: 5px;
                     display: block;
                     img {
-                        height: 93px;
-                        width: 142px;
+                        height: 100px;
+                        width: 160px;
                     }
                     &.show {
                         filter: none;
@@ -465,7 +465,7 @@
 
     #story {
         // height: 70vh;
-        padding: 120px 0;
+        padding: 50px 0;
         text-align: center;
         .title {
             color: $color-primary;
@@ -982,7 +982,7 @@
             padding: 40px 0;
             .title {
                 font-weight: 600;
-                font-size: 30px;
+                font-size: 24px;
             }
 
             .description {
@@ -1011,7 +1011,7 @@
             padding-top: 40px;
             .title {
                 font-weight: 600;
-                font-size: 30px;
+                font-size: 24px;
             }
 
             .description {
