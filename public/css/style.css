@@ -601,8 +601,8 @@ a {
   display: block;
 }
 #home #summarySection .image .slider .slider-image img {
-  height: 100px;
-  width: 160px;
+  height: 120px;
+  width: 200px;
 }
 #home #summarySection .image .slider .slider-image.show {
   filter: none;
@@ -669,7 +669,7 @@ a {
   width: 3%;
 }
 #home #story {
-  padding: 50px 0;
+  padding: 40px 0;
   text-align: center;
 }
 #home #story .title {
