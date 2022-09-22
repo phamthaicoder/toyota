@@ -888,52 +888,77 @@
             <div class="container h-100 d-flex align-items-center">
                 <div class="w-100" data-aos="fade-up" data-aos-duration="1000">
                     <p class="title">FAMILY ON THE WAY</p>
-                    <p class="description mb-5">Khám phá câu chuyện gia đình trên hành trình đồng hành cùng Veloz Cross </p>
+                    <p class="description mb-5">
+                        Nay rảnh rỗi nên tranh thủ kể về chuyến du lịch Huế - Đà Nẵng vừa rồi. Lần này cả nhà chỉ cần sắm sửa để lên đồ sống ảo thôi, còn tất cả đã có Toyota Việt Nam lo. BTC chuẩn bị mọi thứ từ A-Z luôn, lên lịch trình, sắm các đồ dùng như nước, bánh kẹo,.... cho đến việc book chỗ ở, xe cộ các thứ. Cám ơn Toyota Việt Nam đã tổ chức chuyến đi du lịch thú vị này.
+                        <br>
+                        Trong suốt chuyến đi cả nhà có ghé vài nơi nổi tiếng, được ở resort đẹp, nên thu về được kha khá ảnh đẹp. Di chuyển đường dài bằng Veloz Cross nhưng mà cả hai đứa với vợ mình vẫn vui vẻ, nô đùa với nhau, chắc vì con xe này rộng rãi, thoải mái. Vợ còn bảo: "Sau chắc phải đi du lịch kiểu này nhiều nhiều, vì đi vừa vui vừa khoẻ, vừa lưu được những khoảnh khắc ý nghĩa cùng các con." Ngẫm cũng đúng, chắc sau chuyến này chăm cho cả nhà đi chơi tiếp, để có thêm thời gian đồng hành, vui chơi cùng vợ con.
+                    </p>
                     <div class="image"  data-aos="fade-left" data-aos-duration="1000">
-                        <img class="image-main" src="{{ asset('img/home/saturday/2.JPG') }}" alt="" style="max-width: 100%; max-height: 100%">
+                        <img class="image-main" src="{{ asset('img/home/summary/Ảnh 1.jpg') }}" alt="" style="max-width: 100%; max-height: 100%">
                         <div class="slider">
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image slider-image show active">
-                                <img src="{{ asset('img/home/thumb-1.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/thumb-2.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 3.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/thumb-3.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 4.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/thumb-4.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 5.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/thumb-5.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 6.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/thumb-6.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 7.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 8.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 9.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 10.jpg') }}" alt="">
                             </a>
                         </div>
 
                         <div class="responsive">
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
-                                <img class="thumb" src="{{ asset('img/home/thumb-1.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
-                                <img class="thumb" src="{{ asset('img/home/thumb-2.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 3.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
-                                <img class="thumb" src="{{ asset('img/home/thumb-3.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 4.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
-                                <img class="thumb" src="{{ asset('img/home/thumb-4.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 5.jpg') }}" alt="">
                             </a>
-                            <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;" class="mt-2">
-                                <img class="thumb" src="{{ asset('img/home/thumb-5.png') }}" alt="">
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 6.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 7.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 8.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 9.jpg') }}" alt="">
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
+                                <img src="{{ asset('img/home/summary/ảnh 10.jpg') }}" alt="">
                             </a>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="saturdayModal" tabindex="-1" aria-labelledby="saturdayModalLabel" aria-hidden="true">
+            <div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -941,33 +966,42 @@
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
-                        <div id="saturday-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div id="summary-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/thumb-1.png') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thumb-2.png') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/summary/ảnh 3.jpg') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thumb-3.png') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/summary/ảnh 4.jpg') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thumb-4.png') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/summary/ảnh 5.jpg') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thumb-5.png') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/summary/ảnh 6.jpg') }}" class="carousel-image" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thumb-6.png') }}" class="carousel-image" alt="...">
+                                    <img src="{{ asset('img/home/summary/ảnh 7.jpg') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/summary/ảnh 8.jpg') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/summary/ảnh 9.jpg') }}" class="carousel-image" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('img/home/summary/ảnh 10.jpg') }}" class="carousel-image" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#saturday-carousel"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#summary-carousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#saturday-carousel"
+                            <button class="carousel-control-next" type="button" data-bs-target="#summary-carousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
