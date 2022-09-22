@@ -601,8 +601,8 @@ a {
   display: block;
 }
 #home #summarySection .image .slider .slider-image img {
-  height: 120px;
-  width: 200px;
+  height: 100px;
+  width: 150px;
 }
 #home #summarySection .image .slider .slider-image.show {
   filter: none;
@@ -860,6 +860,10 @@ a {
   #home .week .modal .modal-dialog .modal-content {
     width: 90%;
   }
+  #home #summarySection .image .slider .slider-image img {
+    height: 70px;
+    width: 110px;
+  }
   #home #footer-banner .logo-section {
     width: 205px;
     margin-bottom: -24px;
@@ -969,6 +973,10 @@ a {
     font-weight: 600;
     font-size: 18px;
   }
+  #home #summarySection .image .slider .slider-image img {
+    height: 70px;
+    width: 100px;
+  }
   #home #footer span {
     font-size: 10px;
     letter-spacing: 1px;
@@ -1061,9 +1069,9 @@ a {
     justify-content: center;
     flex-wrap: wrap;
   }
-  #home #summarySection .image .responsive .thumb {
+  #home #summarySection .image .responsive img {
     margin: 4px;
-    width: 100px;
+    width: 130px;
     height: auto;
   }
   #home #story {
@@ -1140,14 +1148,19 @@ a {
     width: 120px;
     height: auto;
   }
+  #home #summarySection .image .responsive img {
+    width: 120px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 414.98px) {
   #home .week .image .slider .slider-image img {
     width: 115px;
     height: auto;
   }
-  #home #summarySection .image .responsive .thumb {
+  #home #summarySection .image .responsive img {
     width: 115px;
+    height: auto;
   }
 }
 @media screen and (max-width: 400.98px) {
@@ -1155,8 +1168,9 @@ a {
     width: 105px;
     height: auto;
   }
-  #home #summarySection .image .responsive .thumb {
+  #home #summarySection .image .responsive img {
     width: 105px;
+    height: auto;
   }
 }
 @media screen and (max-width: 375.98px) {
@@ -1164,7 +1178,7 @@ a {
     width: 95px;
     height: auto;
   }
-  #home #summarySection .image .responsive .thumb {
-    width: 95px;
+  #home #summarySection .image .responsive img {
+    width: 105px;
   }
 }

@@ -387,8 +387,8 @@
                     padding: 5px;
                     display: block;
                     img {
-                        height: 120px;
-                        width: 200px;
+                        height: 100px;
+                        width: 150px;
                     }
                     &.show {
                         filter: none;
@@ -645,7 +645,7 @@
                     .slider-image {
                         img {
                             height: 80px;
-                            width:120px;
+                            width: 120px;
                         }
                     }
                 }
@@ -719,7 +719,18 @@
                 }
             }
         }
-
+        #summarySection {
+            .image {
+                .slider {
+                    .slider-image {
+                        img {
+                            height: 70px;
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
         #footer-banner {
             .logo-section {
                 width: 205px;
@@ -862,6 +873,19 @@
                 }
             }
         }
+
+        #summarySection {
+            .image {
+                .slider {
+                    .slider-image {
+                        img {
+                            height: 70px;
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
         #footer {
             span {
                 font-size: 10px;
@@ -998,9 +1022,9 @@
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
-                    .thumb {
+                    img {
                         margin: 4px;
-                        width: 100px;
+                        width: 130px;
                         height: auto;
                     }
                 }
@@ -1119,8 +1143,9 @@
         #summarySection {
             .image {
                 .responsive {
-                    .thumb {
-                        // width: 130px;
+                    img {
+                        width: 120px;
+                        height: auto;
                     }
                 }
             }
@@ -1145,9 +1170,9 @@
         #summarySection {
             .image {
                 .responsive {
-                    .thumb {
+                    img {
                         width: 115px;
-
+                        height: auto;
                     }
                 }
             }
@@ -1172,8 +1197,9 @@
         #summarySection {
             .image {
                 .responsive {
-                    .thumb {
+                    img {
                         width: 105px;
+                        height: auto;
                     }
                 }
             }
@@ -1198,8 +1224,8 @@
         #summarySection {
             .image {
                 .responsive {
-                    .thumb {
-                        width: 95px;
+                    img {
+                        width: 105px;
 
                     }
                 }
