@@ -946,11 +946,11 @@
                                 </div>
                           </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="left:-15%; bottom: -10%">
-                                <img src="{{ asset('img/general/icon-left.svg') }}" alt="">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="left:-15%; bottom: -15%; opacity: unset">
+                                <img src="{{ asset('img/general/arrow-right-2.svg') }}" alt="">
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="right:-15%; bottom: -10%">
-                                <img src="{{ asset('img/general/icon-right.svg') }}" alt="">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="right:-15%; bottom: -15%; opacity: unset">
+                                <img src="{{ asset('img/general/arrow-left-2.svg') }}" alt="">
 
                             </button>
                           </div>
