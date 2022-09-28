@@ -895,7 +895,66 @@
                     </p>
                     <div class="image"  data-aos="fade-left" data-aos-duration="1000">
                         <img class="image-main" src="{{ asset('img/home/summary/Ảnh 1.jpg') }}" alt="" style="max-width: 100%; max-height: 100%">
-                        <div class="slider">
+                        <div id="carouselExampleControls" class="carousel slide slider" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-3" style="padding: 4px">
+                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                                <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3" style="padding: 4px">
+                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                                <img src="{{ asset('img/home/summary/ảnh 3.jpg') }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3" style="padding: 4px">
+                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                                <img src="{{ asset('img/home/summary/ảnh 4.jpg') }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3" style="padding: 4px">
+                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                                <img src="{{ asset('img/home/summary/ảnh 5.jpg') }}" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3" style="padding: 4px">
+                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                            <img src="{{ asset('img/home/summary/ảnh 6.jpg') }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3" style="padding: 4px">
+                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                            <img src="{{ asset('img/home/summary/ảnh 7.jpg') }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3" style="padding: 4px">
+                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                            <img src="{{ asset('img/home/summary/ảnh 8.jpg') }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3" style="padding: 4px">
+                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
+                                            <img src="{{ asset('img/home/summary/ảnh 9.jpg') }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                          </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="left:-15%; bottom: -10%">
+                                <img src="{{ asset('img/general/icon-left.svg') }}" alt="">
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="right:-15%; bottom: -10%">
+                                <img src="{{ asset('img/general/icon-right.svg') }}" alt="">
+
+                            </button>
+                          </div>
+                        {{-- <div class="slider">
                             <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
                                 <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" alt="">
                             </a>
@@ -923,7 +982,7 @@
                             <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
                                 <img src="{{ asset('img/home/summary/ảnh 10.jpg') }}" alt="">
                             </a>
-                        </div>
+                        </div> --}}
 
                         <div class="responsive">
                             <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image slider-image show active">
