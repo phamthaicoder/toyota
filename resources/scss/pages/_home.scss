@@ -374,21 +374,26 @@
                 display: none;
             }
 
+            // .carousel-item {
+            //     display: flex;
+            // }
+
             .slider {
                 position: absolute;
                 top: 100%;
                 left: 50%;
+                width: 60%;
                 transform: translate(-50%, -50%);
                 display: flex;
                 .slider-image {
                     border: none;
                     background: none;
                     filter: brightness(60%);
-                    padding: 5px;
+                    // padding: 5px;
                     display: block;
                     img {
-                        height: 100px;
-                        width: 150px;
+                        height: auto;
+                        width: 100%;
                     }
                     &.show {
                         filter: none;
