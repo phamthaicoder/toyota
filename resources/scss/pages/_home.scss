@@ -517,7 +517,7 @@
 
                 .modal-content {
                     height: 100%;
-                    width: 70%;
+                    width: 65%;
                     border: none;
                     border-radius: unset;
                     position: unset;
@@ -769,6 +769,13 @@
                     }
                 }
             }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 75%;
+                    }
+                }
+            }
         }
 
         #footer-banner {
@@ -859,6 +866,13 @@
                         //     height: 70px;
                         //     width: 110px;
                         // }
+                    }
+                }
+            }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 90%;
                     }
                 }
             }
@@ -1047,6 +1061,13 @@
                     }
                 }
             }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 75%;
+                    }
+                }
+            }
         }
 
         #footer {
@@ -1207,6 +1228,13 @@
                         margin: 4px;
                         width: 130px;
                         height: auto;
+                    }
+                }
+            }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        width: 90%;
                     }
                 }
             }
