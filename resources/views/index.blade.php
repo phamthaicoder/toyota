@@ -954,7 +954,8 @@
 
                             </button>
                           </div>
-                        {{-- <div class="slider">
+
+                        <div class="responsive">
                             <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
                                 <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" alt="">
                             </a>
@@ -980,36 +981,6 @@
                                 <img src="{{ asset('img/home/summary/ảnh 9.jpg') }}" alt="">
                             </a>
                             <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 10.jpg') }}" alt="">
-                            </a>
-                        </div> --}}
-
-                        <div class="responsive">
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                <img src="{{ asset('img/home/summary/ảnh 2.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 3.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 4.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 5.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 6.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 7.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 8.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/ảnh 9.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="summaryModal" href="javascript:;" class="slider-image">
                                 <img src="{{ asset('img/home/summary/ảnh 10.jpg') }}" alt="">
                             </a>
                         </div>
