@@ -3,1313 +3,748 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toyota Veloz Cross</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="./img/favicon/favicon.ico">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KDN34GC');</script>
-    <!-- End Google Tag Manager -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ngọc Ánh</title>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            background: rgb(0, 0, 0);
+        }
+
+        canvas {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            /* top: 50%;
+          left: 50%; */
+            z-index: 1;
+            display: block;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            animation: heart 1.5s ease infinite;
+        }
+
+        @keyframes heart {
+            0% {
+                transform: scale(1);
+            }
+
+            30% {
+                transform: scale(0.8);
+            }
+
+            /* 60% {
+              transform: scale(1.2);
+          } */
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        body {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: "Barlow", sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1.main,
+        p.demos {
+            -webkit-animation-delay: 18s;
+            -moz-animation-delay: 18s;
+            -ms-animation-delay: 18s;
+            animation-delay: 18s;
+        }
+
+        .sp-container {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.3) 35%,
+                    rgba(0, 0, 0, 0.7));
+            background: -moz-radial-gradient(rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.3) 35%,
+                    rgba(0, 0, 0, 0.7));
+            background: -ms-radial-gradient(rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.3) 35%,
+                    rgba(0, 0, 0, 0.7));
+            background: radial-gradient(rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.3) 35%,
+                    rgba(0, 0, 0, 0.7));
+        }
+
+        .sp-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 1000;
+        }
+
+        .sp-container h2 {
+            position: absolute;
+            top: 50%;
+            line-height: 100px;
+            height: 90px;
+            margin-top: -68px;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+            color: transparent;
+            -webkit-animation: blurFadeInOut 3s ease-in backwards;
+            -moz-animation: blurFadeInOut 3s ease-in backwards;
+            -ms-animation: blurFadeInOut 3s ease-in backwards;
+            animation: blurFadeInOut 3s ease-in backwards;
+        }
+
+        .sp-container h2.frame-1 {
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -ms-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        .sp-container h2.frame-2 {
+            -webkit-animation-delay: 3s;
+            -moz-animation-delay: 3s;
+            -ms-animation-delay: 3s;
+            animation-delay: 3s;
+        }
+
+        .sp-container h2.frame-3 {
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -ms-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+
+        .sp-container h2.frame-4 {
+            font-size: 30px;
+            -webkit-animation-delay: 9s;
+            -moz-animation-delay: 9s;
+            -ms-animation-delay: 9s;
+            animation-delay: 9s;
+        }
+
+        .sp-container h2.frame-5 {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none;
+            color: transparent;
+            text-shadow: 0px 0px 1px rgb(255, 255, 255);
+        }
+
+        .sp-container h2.frame-5 span {
+            -webkit-animation: blurFadeIn 3s ease-in 12s backwards;
+            -moz-animation: blurFadeIn 1s ease-in 12s backwards;
+            -ms-animation: blurFadeIn 3s ease-in 12s backwards;
+            animation: blurFadeIn 3s ease-in 12s backwards;
+            color: transparent;
+            text-shadow: 0px 0px 1px rgb(255, 255, 255);
+        }
+
+        .sp-container h2.frame-5 span:nth-child(2) {
+            -webkit-animation-delay: 13s;
+            -moz-animation-delay: 13s;
+            -ms-animation-delay: 13s;
+            animation-delay: 13s;
+        }
+
+        .sp-container h2.frame-5 span:nth-child(3) {
+            -webkit-animation-delay: 14s;
+            -moz-animation-delay: 14s;
+            -ms-animation-delay: 14s;
+            animation-delay: 14s;
+        }
+
+        .sp-globe {
+            position: absolute;
+            width: 282px;
+            height: 273px;
+            left: 50%;
+            top: 50%;
+            margin: -137px 0 0 -141px;
+
+            -webkit-animation: fadeInBack 3.6s linear 14s backwards;
+            -moz-animation: fadeInBack 3.6s linear 14s backwards;
+            -ms-animation: fadeInBack 3.6s linear 14s backwards;
+            animation: fadeInBack 3.6s linear 14s backwards;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+            filter: alpha(opacity=30);
+            opacity: 0.3;
+            -webkit-transform: scale(5);
+            -moz-transform: scale(5);
+            -o-transform: scale(5);
+            -ms-transform: scale(5);
+            transform: scale(5);
+        }
+
+        .sp-circle-link {
+            position: absolute;
+            left: 50%;
+            bottom: 100px;
+            margin-left: -50px;
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            color: #3f1616;
+            font-size: 25px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-animation: fadeInRotate 1s linear 16s backwards;
+            -moz-animation: fadeInRotate 1s linear 16s backwards;
+            -ms-animation: fadeInRotate 1s linear 16s backwards;
+            animation: fadeInRotate 1s linear 16s backwards;
+            -webkit-transform: scale(1) rotate(0deg);
+            -moz-transform: scale(1) rotate(0deg);
+            -o-transform: scale(1) rotate(0deg);
+            -ms-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+        }
+
+        .sp-circle-link:hover {
+            background: #85373b;
+            color: #fff;
+        }
+
+        /**/
+
+        @-webkit-keyframes blurFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.3);
+            }
+
+            20%,
+            75% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                text-shadow: 0px 0px 50px #fff;
+                -webkit-transform: scale(0);
+            }
+        }
+
+        @-webkit-keyframes blurFadeIn {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.3);
+            }
+
+            50% {
+                opacity: 0.5;
+                text-shadow: 0px 0px 10px #fff;
+                -webkit-transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes fadeInBack {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(0);
+            }
+
+            50% {
+                opacity: 0.4;
+                -webkit-transform: scale(2);
+            }
+
+            100% {
+                opacity: 0.2;
+                -webkit-transform: scale(5);
+            }
+        }
+
+        @-webkit-keyframes fadeInRotate {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(0) rotate(360deg);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /**/
+
+        @-moz-keyframes blurFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -moz-transform: scale(1.3);
+            }
+
+            20%,
+            75% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -moz-transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                text-shadow: 0px 0px 50px #fff;
+                -moz-transform: scale(0);
+            }
+        }
+
+        @-moz-keyframes blurFadeIn {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -moz-transform: scale(1.3);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -moz-transform: scale(1);
+            }
+        }
+
+        @-moz-keyframes fadeInBack {
+            0% {
+                opacity: 0;
+                -moz-transform: scale(0);
+            }
+
+            50% {
+                opacity: 0.4;
+                -moz-transform: scale(2);
+            }
+
+            100% {
+                opacity: 0.2;
+                -moz-transform: scale(5);
+            }
+        }
+
+        @-moz-keyframes fadeInRotate {
+            0% {
+                opacity: 0;
+                -moz-transform: scale(0) rotate(360deg);
+            }
+
+            100% {
+                opacity: 1;
+                -moz-transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /**/
+
+        @keyframes blurFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                transform: scale(1.3);
+            }
+
+            20%,
+            75% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                text-shadow: 0px 0px 50px #fff;
+                transform: scale(0);
+            }
+        }
+
+        @keyframes blurFadeIn {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                transform: scale(1.3);
+            }
+
+            50% {
+                opacity: 0.5;
+                text-shadow: 0px 0px 10px #fff;
+                transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInBack {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(2);
+            }
+
+            100% {
+                opacity: 0.2;
+                transform: scale(5);
+            }
+        }
+
+        @keyframes fadeInRotate {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(360deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDN34GC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="home">
-        <header id="header" class="header">
-            <img class="banner kenburns-bottom" src="{{ asset('img/home/banner.JPG') }}" alt="banner">
-            <div class="container h-100">
-                <div class="h-100 d-flex flex-column justify-content-between">
-                    <div class="container-fluid">
-                        <nav class="navbar navbar-dark navbar-expand-lg align-items-start">
-                            <a class="navbar-brand" href="#">
-                                <img src="{{ asset('img/general/logo.svg') }}" alt="">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                {{-- <span class="navbar-toggler-icon"></span> --}}
-                                <img src="{{ asset('img/general/icon-menu-toggle.svg') }}" alt="">
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#introduction">CAR-TIME STORY</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#summarySection">FAMILY ON THE WAY</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#story">HÀNH TRÌNH KHÁCH HÀNG</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="title text-center">
-                        <p>VELOZ CROSS</p>
-                    </div>
-                    <div class="description text-center">
-                        <p>Kéo xuống để khám phá câu chuyện</p>
-                        <img src="{{ asset('img/general/icon-button.svg') }}" alt="">
-                    </div>
-                    <div class="tool">
-                        <a id="scroll-to-top" class="btn">
-                            <img src="{{ asset('img/general/arrow-up.svg') }}" alt="">
-                        </a>
-                        <a class="btn" data-bs-toggle="modal" data-bs-target="#toolModal">
-                            <img src="./img/general/wheel.svg" alt="">
-                        </a>
-                        <a id="scroll-to-bottom" class="btn">
-                            <img src="{{ asset('img/general/arrow-down.svg') }}" alt="">
-                        </a>
-                        <a href="https://www.toyota.com.vn/veloz-cross-cvt-top" target="_blank" class="btn">
-                            <img src="{{ asset('img/general/global.svg') }}" alt="">
-                        </a>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="toolModal" tabindex="-1" aria-labelledby="toolModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xxl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row align-items-center">
-                                        <form class="col-md-6">
-                                            <h1 class="form-title">Đăng ký lái thử xe</h1>
-
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <label for="form-select" class="form-label">Tỉnh / Thành
-                                                        phố*</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <img src="./img/general/icon-global-black.svg" alt="">
-                                                        </span>
-                                                        <select id="form-select" class="form-select" name="province">
-                                                            <option value="">Chọn tỉnh / thành phố</option>
-                                                            @foreach ($province as $itemProvince)
-                                                                <option value="{{ $itemProvince['id'] }}">{{ $itemProvince['name'] }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <label for="form-select" class="form-label">Đại lý liên hệ*</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <img src="./img/general/icon-home-black.svg" alt="">
-                                                        </span>
-                                                        <select id="form-select" class="form-select" name="dealer">
-                                                            <option value="">Đại lý liên hệ</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <label for="name" class="form-label">Họ và tên*</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <img src="./img/general/icon-user-black.svg" alt="">
-                                                        </span>
-                                                        <input type="text" class="form-control" id="name"  name="name"
-                                                            placeholder="Nhập họ và tên">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <label for="phone" class="form-label">Số điện thoại*</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <img src="./img/general/icon-phone-black.svg" alt="">
-                                                        </span>
-                                                        <input type="text" class="form-control" id="phone" name="phone"
-                                                            placeholder="Nhập số điện thoại">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <label for="email" class="form-label">Email</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <img src="./img/general/icon-mail-black.svg" alt="">
-                                                        </span>
-                                                        <input type="email" class="form-control" id="email" name="email"
-                                                            placeholder="Nhập email">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-6 col-12">
-                                                    <label for="form-select" class="form-label">Nhu cầu</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <img src="{{ asset('img/general/icon-message-black.svg') }}" alt="">
-                                                        </span>
-                                                        <select id="form-select" class="form-select" name="to_buy">
-                                                            <option value="">Dự định mua xe</option>
-                                                            @foreach ($toBuy as $itemToBuy)
-                                                                <option value="{{ $itemToBuy['name'] }}">{{ $itemToBuy['name'] }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="mb-5">Bằng cách nhấp vào Đăng ký ngay, Khách hàng đồng ý gửi thông
-                                                tin của mình tới
-                                                Toyota Việt Nam. Toyota Việt Nam sẽ giữ, sử dụng và đảm bảo bảo mật
-                                                thông tin khách hàng
-                                                theo quy định pháp luật nhằm mục đích phục vụ và tư vấn khách hàng.</p>
-                                            <div class="d-flex justify-content-center align-content-center form-action save-data" style="cursor: pointer;">
-                                                <button class="btn" type="submit">Đăng ký ngay</button>
-                                            </div>
-                                        </form>
-                                        <div class="col-lg-6 text-center">
-                                            <img src="{{ asset('img/home/form-image.png') }}" style="width: 100%;">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section id="introduction" class="introduction">
-            <div class="container h-100 d-flex align-items-center">
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <p class="title">TRONG TIỆN NGHI - NGOÀI PHONG CÁCH</p>
-                    <p class="description mb-5">Vẻ ngoài thể thao, phong cách và hiện đại như một chiếc crossover thực
-                        thụ là cảm giác lái mà Veloz Cross mang lại từ cái nhìn đầu tiên.
-                        Thiết kế nội thất rộng rãi linh hoạt, tiện nghi ngập tràn khoang lái cùng với khả năng vận hành
-                        êm ái, giúp chủ sở hữu dễ dàng di chuyển mọi lúc mọi nơi.
-                        Công nghệ an toàn hàng đầu mang lại cảm giác an tâm trên mọi hành trình. Với những trang bị hiện
-                        đại tiên tiến nhất phân khúc, Veloz Cross hứa hẹn sẽ là người bạn đồng hành đáng tin cậy của mỗi
-                        gia đình.
-                    </p>
-                    <div class="row">
-                        <a href="#monday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
-                            <img class="thumb" src="{{ asset('img/home/thumb-1.png') }}" alt="">
-                        </a>
-                        <a href="#tuesday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
-                            <img class="thumb" src="{{ asset('img/home/thumb-2.png') }}" alt="">
-                        </a>
-                        <a href="#wednesday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
-                            <img class="thumb" src="{{ asset('img/home/thumb-3.png') }}" alt="">
-                        </a>
-                        <a href="#thursday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
-                            <img class="thumb" src="{{ asset('img/home/thumb-4.png') }}" alt="">
-                        </a>
-                        <a href="#friday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
-                            <img class="thumb" src="{{ asset('img/home/thumb-5.png') }}" alt="">
-                        </a>
-                        <a href="#saturday" class="col-xl-2 col-lg-4 col-md-6 col-6 mt-2">
-                            <img class="thumb" src="{{ asset('img/home/thumb-6.png') }}" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="monday" class="week monday">
-            <img class="background-section" src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-5">
-                        <div class="content">
-                            <p class="title">
-                                Những quyết định của Phương<br>
-                                làm thay đổi cuộc đời Trường
-                            </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
-                            <div class="description" data-aos="fade-right" data-aos-duration="1000">
-                                Như đã hứa hôm nọ, hôm nay Trường kể cho cả nhà nghe về những kỉ niệm đáng yêu nhất của
-                                2 vợ chồng mình. <br>
-                                Hai đứa học chung cấp 2, hồi đó bạn bè lít nhít, đâu đã biết để ý gì. Lên cấp 3, mình
-                                thầm thích nàng nhưng thực sự không đủ can đảm để bày tỏ, vì thấy khả năng “win” trái
-                                tim nàng không cao.
-                                Hồi đó, nàng không phải hotgirl nhưng luôn thu hút sự chú ý vì rất thông minh, sắc sảo
-                                và hết mình vì bạn bè. Tình cảm cứ ấp ủ như thế đến một ngày mình liều mình bày tỏ
-                                <p class="read-more" style="font-style: italic;">... Xem thêm</p>.
-                                <span class="read-more-show">
-                                    Nàng hỏi lại rất duyên: “Mày yêu tao thật á?” và thế là …xong, thành công! Hóa ra
-                                    chỉ cần “nói thật”, là nàng gật đầu. <br>
-                                    Tốt nghiệp cấp 3, mình dấn thân vào con đường người mẫu. Phương cùng gia đình chuẩn
-                                    bị thu xếp đồ đạc qua định cư Đức, vẽ sẵn một tương lai tươi sáng.
-                                    Mình không dám níu giữ vì thời điểm ấy không có gì để đảm bảo tương lai. Cứ tưởng là
-                                    chuyện tình của vợ chồng mình kết thúc từ đó.
-                                    Nhưng không, vào phút chót, nàng quyết định không đi Đức nữa mà ở lại Việt Nam cùng
-                                    mình. Lúc ấy, Trường bất ngờ thật sự. <br>
-                                    Giờ nhớ lại khoảnh khắc ấy, lòng vẫn thấy bồi hồi, xốn xang. Nhờ có quyết định ngày
-                                    ấy của vợ, mà hai vợ chồng mới viết lên được chuyện tình lãng mạn như giờ.
-                                    Ảnh này mới chụp, từ hồi “đưa em đi chơi xa, trên con xe tay ga” đến bây giờ là
-                                    “trên Veloz Cross”, chúng mình vẫn không giảm độ ngọt thế này đây!
-                                </span>
-                                <p class="collapse" style="font-style: italic;">... Thu gọn</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="image" data-aos="fade-right" data-aos-duration="1000"
-                            data-aos-easing="ease-in-sine">
-                            <img class="image-main" src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
-                            <div class="slider">
-                                <a data-bs-toggle="modal" data-bs-target="#mondayModal" href="javascript:;"
-                                    class="slider-image show active">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#mondayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/1.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#mondayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/3.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#mondayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/4.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#mondayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/thursday/5.JPG') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="mondayModal" tabindex="-1" aria-labelledby="mondayModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="monday-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/thursday/2.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/1.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/3.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/4.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/thursday/5.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#monday-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#monday-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tuesday" class="week tuesday">
-            <img class="background-section" src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-7">
-                        <div class="image" data-aos="fade-left" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
-                            <div class="slider d-flex justify-content-between">
-                                <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
-                                    class="slider-image show active">
-                                    <img src="{{ asset('img/home/tuesday/2.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/tuesday/3.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/tuesday/4.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/tuesday/5.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/tuesday/6.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#tuesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/tuesday/1.JPG') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="content">
-                            <p class="title">
-                                Sự nghiệp thăng hoa nhờ có vợ làm hậu phương
-                            </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
-                            <div class="description" data-aos="fade-left" data-aos-duration="1000">
-                                Không nhiều người biết rằng cũng chính Phương là người đã “kéo” Trường ra khỏi nghề
-                                người mẫu để “dẫn lối” mình đến nghiệp diễn xuất.
-                                Mình đạt giải Siêu mẫu ăn ảnh tại cuộc thi Siêu mẫu năm 2004, nhưng Phương vẫn khuyên
-                                “Anh nên thi đại học Sân khấu điện ảnh, sẽ có tương lai hơn”.
-                                Năm hai đại học, mình có một vai diễn đầu tiên, Phương thức xuyên đêm để xem hết 20 tập
-                                phim để góp ý về cách diễn làm sao cho sâu sắc và truyền cảm hứng hơn.<p
-                                    class="read-more" style="font-style: italic;">... Xem thêm</p>
-                                <span class="read-more-show">
-                                    <br>
-                                    Sau nhiều năm gắn bó trong nghề với sự ủng hộ của vợ từ đầu đến cuối, mình cũng đã
-                                    có cho mình những vai diễn
-                                    để đời và ghi dấu ấn trong lòng khán giả. <br>
-                                    Mọi người hay bảo vợ khuyên gì thì làm ngược lại. Còn mình thì cứ y lời vợ mà làm,
-                                    có làm sao không cả nhà? Đi xe này cũng là vì vợ bảo xe này nghe tả hơi bị giống
-                                    anh: “trong tiện nghi, ngoài phong cách” ;
-                                </span>
-                                <p class="collapse" style="font-style: italic;">... Thu gọn</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="tuesdayModal" tabindex="-1" aria-labelledby="tuesdayModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="tuesday-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/tuesday/2.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/tuesday/3.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/tuesday/4.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/tuesday/5.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/tuesday/6.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/tuesday/1.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#tuesday-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#tuesday-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="wednesday" class="week wednesday">
-            <img class="background-section" src="{{ asset('img/home/saturday/2.JPG') }}" alt="">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-5">
-                        <div class="content">
-                            <p class="title">
-                                ĐÁM CƯỚI 1-0-2
-                            </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
-                            <div class="description" data-aos="fade-up" data-aos-duration="1000">
-                                Hôm nay cả nhà lên đường đi chơi. Đường xa nhưng xe chạy êm, lại thoáng rộng nên 2 chị
-                                em hào hứng, cười đùa trêu nhau rất rôm rả.
-                                Chip, Bon tự nhiên hỏi Bố nhớ nhất chuyến đi nào? Không hiểu sao dòng hồi tưởng của mình
-                                lại quay ngay về chuyến đón cô dâu, tức mẹ của 2 đứa này cách đây gần 14 năm.<br>
-                                Đầu tháng 11 năm ấy, người dân Hà Nội chứng kiến một trận lụt lịch sử.
-                                Hôm đó, mình còn phải thi môn cuối trước khi tốt nghiệp Đại học Sân khấu điện ảnh. Mình
-                                không tưởng<p class="read-more" style="font-style: italic;">... Xem thêm</p>
-                                <span class="read-more-show">
-                                    tượng nổi có ngày phải xắn quần lội vào trường làm bài thi. Càng không thể tin ngày
-                                    cưới mình lại bì bõm lội tới nhà hàng, thay vội bộ comple để chờ cô dâu đến và đón
-                                    khách.<br>
-                                    Người ta lấy nhau ngày mưa thì nhiều vô kể nhưng chọn đúng ngày Hà Nội lụt thì mấy
-                                    chục năm mới có một lần. Bố và mẹ Chip, Bon đúng là “định mệnh” của nhau rồi.<br>
-                                    Nghe đến đây, 2 chị em Chíp – Bon thích thú cười khì.
-                                </span>
-                                <p class="collapse" style="font-style: italic;">... Thu gọn</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="image" data-aos="fade-up" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/saturday/2.JPG') }}" alt="">
-                            <div class="slider d-flex justify-content-between">
-                                <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
-                                    class="slider-image show active">
-                                    <img src="{{ asset('img/home/saturday/2.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/saturday/3.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/saturday/4.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/saturday/5.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/saturday/6.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#wednesdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/saturday/1.JPG') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="wednesdayModal" tabindex="-1" aria-labelledby="wednesdayModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="wednesdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="wednesday-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/saturday/2.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/saturday/3.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/saturday/4.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/saturday/5.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/saturday/6.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/saturday/1.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#wednesday-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#wednesday-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="thursday" class="week thursday">
-            <img class="background-section" src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-7">
-                        <div class="image" data-aos="fade-left" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
-                            <div class="slider">
-                                <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
-                                    class="slider-image show active">
-                                    <img src="{{ asset('img/home/sunday/4.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/sunday/2.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/sunday/3.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/sunday/1.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/sunday/5.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#thursdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/sunday/6.JPG') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="content">
-                            <p class="title">
-                                Về nhà chồng nhé, có vợ chờ
-                            </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
-                            <div class="description" data-aos="fade-left" data-aos-duration="1000">
-                                Những lúc cả nhà được quay quần như thế này, mình lại nhớ có đợt phải quay phim xa nhà
-                                lâu, rất lâu.<br>
-                                Hồi đóng phim “Bí mật Tam giác vàng”, đoàn làm phim phải di chuyển liên tục ở ba nước
-                                Lào - Campuchia - Myanmar qua hơn 10.000km.
-                                Vì thời gian gấp rút, Trường phải xa nhà với thời gian dài kỉ kỷ lục: 4 tháng.
-                                Khi đoàn quay ở Điện Biên, dù chỉ được nghỉ có ba ngày nhưng mình vẫn xin phép đạo diễn
-                                cho về nhà thăm nhà.
-                                Không gọi điện trước, khi mở cửa ra thấy mình, vợ rất bất<p class="read-more"
-                                    style="font-style: italic;">... Xem thêm</p>
-                                <span class="read-more-show">
-                                    ngờ và lao vào ôm chầm lấy. Chắc ông chồng, ông bố nào cũng chỉ mong có người mong,
-                                    người chờ mình trở về sau bao nhiêu vất vả công việc bên ngoài. <br>
-                                    Bây giờ, nếu bối cảnh phim cách nhà dưới 100km, mình cũng sẽ tìm cách đi về trong
-                                    ngày.
-                                    Vì mình biết, ở nhà có vợ và 2 nhóc lúc nào cũng đợi bố về để cùng nhau làm những
-                                    điều thật đơn giản: quây quần, ăn uống, trò chuyện. Giờ có Veloz Cross rồi, đi lại
-                                    kiểu này cũng là easy game thôi.
-                                </span>
-                                <p class="collapse" style="font-style: italic;">... Thu gọn</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="thursdayModal" tabindex="-1" aria-labelledby="thursdayModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="thursdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="thursday-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/sunday/4.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/sunday/2.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/sunday/3.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/sunday/1.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/sunday/5.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/sunday/6.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#thursday-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#thursday-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="friday" class="week friday">
-            <img class="background-section" src="{{ asset('img/home/friday/3.JPG') }}" alt="">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-5">
-                        <div class="content">
-                            <p class="title">
-                                Nhìn con khôn lớn
-                            </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
-                            <div class="description" data-aos="fade-right" data-aos-duration="1000">
-                                Mình hay phải đi làm xa dài ngày nên 2 bạn này hay tâm sự với mẹ hơn.
-                                Nhưng khi có bố ở nhà thì 2 chị em lại rất thích chơi với bố.
-                                Có thể chỉ là rủ nhau trốn vào Veloz Cross để đùa nghịch cho thoải mái và tâm sự nhỏ to
-                                đủ thứ chuyện.<br>
-                                Thấy con khôn lớn, trưởng thành hơn từng ngày có lẽ là điều hạnh phúc nhất.
-                                Hồi tham gia “Bố ơi, mình đi đâu thế”, Chíp mới 6 tuổi, khá ít nói và hay ngượng ngùng.
-                                Có một thử thách 2 bố con phải ngủ trong ngôi nhà giữa cánh đồng ngô. Nhưng đến<p
-                                    class="read-more" style="font-style: italic;">... Xem thêm</p>
-                                <span class="read-more-show">
-                                    tối Chip bắt đầu sợ vì ở đó rất tối và có nhiều côn trùng. Khi đi ngủ Chip lại khóc
-                                    vì nhớ mẹ, phải dỗ mãi Chip mới ngủ. Sáng hôm sau các cặp bố con phải dậy từ 4h sáng
-                                    để làm nhiệm vụ.
-                                    Cuối cùng cả hai bố con đều ngủ quên và không hoàn thành được nhiệm vụ hôm đó. Bây
-                                    giờ, con đã sắp tròn 13 tuổi, bơi lội như một nàng tiên cá, 3 ngày là “xử gọn” một
-                                    bản piano, rất già đời “tra khảo” các vai diễn của bố.<br>
-                                    Còn Bon thì càng lớn càng bộc lộ nét hài hước, duyên ngầm. Có lần rủ cậu diễn xuất
-                                    làm mặt lạnh trên nền nhạc quẩy, mà cậu nhập tâm hơn cả bố.
-                                </span>
-                                <p class="collapse" style="font-style: italic;">... Thu gọn</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="image" data-aos="fade-right" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/friday/3.JPG') }}" alt="">
-                            <div class="slider">
-                                <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
-                                    class="slider-image show active">
-                                    <img src="{{ asset('img/home/friday/3.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/friday/2.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/friday/1.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/friday/4.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#fridayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/friday/5.JPG') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="fridayModal" tabindex="-1" aria-labelledby="fridayModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="fridayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="friday-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/friday/3.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/friday/2.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/friday/1.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/friday/4.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/friday/5.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#friday-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#friday-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="saturday" class="week saturday">
-            <img class="background-section" src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-7">
-                        <div class="image" data-aos="fade-up" data-aos-duration="1000">
-                            <img class="image-main" src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
-                            <div class="slider d-flex">
-                                <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
-                                    class="slider-image show active">
-                                    <img src="{{ asset('img/home/wednesday/6.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/wednesday/2.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/wednesday/3.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/wednesday/4.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/wednesday/5.JPG') }}" alt="">
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#saturdayModal" href="javascript:;"
-                                    class="slider-image">
-                                    <img src="{{ asset('img/home/wednesday/1.JPG') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="content">
-                            <p class="title">
-                                Những món quà yêu thương
-                            </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
-                            <div class="description" data-aos="fade-up" data-aos-duration="1000">
-                                Điều cuối cùng mình muốn chia sẻ trong chuỗi những câu chuyện nhỏ về gia đình chính là
-                                về bí quyết “giữ lửa” hôn nhân.
-                                Sau 14, 15 năm “kinh nghiệm, mình đúc rút ra 3 cách, cách thứ 3 là dễ nhất nhé. <br>
-                                Một là phải biết dỗ vợ bằng lời ngon tiếng ngọt. Hai là chia sẻ việc nhà.
-                                Và ba là tặng không nhân dịp gì, tặng một cách bất ngờ.<br>
-                                Nhiều người thắc mắc, nghi ngờ mình “sợ vợ” nên mới tặng vợ nhiều quà thế.
-                                Mà đúng là tặng nhiều thật. Sinh nhật, kỉ niệm ngày cưới, valentine hay Noel thì<p
-                                    class="read-more" style="font-style: italic;">... Xem thêm</p>
-                                <span class="read-more-show">
-                                    không nói làm gì. Sự khác biệt của mình là tết dương, tết âm, tết hàn thực, ông công
-                                    ông táo, rằm tháng 7, trung thu, 1/6, 20/6, 20/11…vợ cũng được nhận quà.
-                                    Một trong những lý do mình chọn Veloz Cross là vì cốp xe siêu rộng, mỗi lần mua quà
-                                    tặng vợ là thoải mái “ship” quà về dù quà có to hay nhiều đến đâu ;<br>
-                                    Thật ra, đó là…sự đầu tư cho niềm vui mọi người ạ. Điều gì làm nàng vui và bất ngờ
-                                    thì mình sẽ luôn cố gắng thực hiện. Khi mẹ vui, cả nhà mới vui được.<br>
-                                    Chip Bon có lần comment “Bố đúng là ngoài đẹp trai, trong chiều vợ”. Chịu khó chọn
-                                    quà rồi được thấy vợ vui, con khen thì cũng thấy khá xứng đáng ;
-                                </span>
-                                <p class="collapse" style="font-style: italic;">... Thu gọn</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="saturdayModal" tabindex="-1" aria-labelledby="saturdayModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="saturdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="saturday-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/wednesday/6.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/wednesday/2.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/wednesday/3.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/wednesday/4.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/wednesday/5.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/wednesday/1.JPG') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#saturday-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#saturday-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="summarySection" class="summarySection">
-            <div class="container h-100 d-flex align-items-center">
-                <div class="w-100" data-aos="fade-up" data-aos-duration="1000">
-                    <p class="title">FAMILY ON THE WAY</p>
-                    <p class="description mb-5">
-                        Nay rảnh rỗi nên tranh thủ kể về chuyến du lịch Huế - Đà Nẵng vừa rồi. Lần này cả nhà chỉ cần sắm sửa để lên đồ sống ảo thôi, còn tất cả đã có Toyota Việt Nam lo. BTC chuẩn bị mọi thứ từ A-Z luôn, lên lịch trình, sắm các đồ dùng như nước, bánh kẹo,.... cho đến việc book chỗ ở, xe cộ các thứ. Cám ơn Toyota Việt Nam đã tổ chức chuyến đi du lịch thú vị này.
-                        <br>
-                        Trong suốt chuyến đi cả nhà có ghé vài nơi nổi tiếng, được ở resort đẹp, nên thu về được kha khá ảnh đẹp. Di chuyển đường dài bằng Veloz Cross nhưng mà cả hai đứa với vợ mình vẫn vui vẻ, nô đùa với nhau, chắc vì con xe này rộng rãi, thoải mái. Vợ còn bảo: "Sau chắc phải đi du lịch kiểu này nhiều nhiều, vì đi vừa vui vừa khoẻ, vừa lưu được những khoảnh khắc ý nghĩa cùng các con." Ngẫm cũng đúng, chắc sau chuyến này chăm cho cả nhà đi chơi tiếp, để có thêm thời gian đồng hành, vui chơi cùng vợ con.
-                    </p>
-                    <div class="image"  data-aos="fade-left" data-aos-duration="1000">
-                        <img class="image-main" src="{{ asset('img/home/summary/anh1.jpg') }}" alt="" style="max-width: 100%; max-height: 100%">
-                        <div id="carouselExampleControls" class="carousel slide slider" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-3" style="padding: 4px">
-                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                                <img src="{{ asset('img/home/summary/anh2.jpg') }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3" style="padding: 4px">
-                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                                <img src="{{ asset('img/home/summary/anh3.jpg') }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3" style="padding: 4px">
-                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                                <img src="{{ asset('img/home/summary/anh4.jpg') }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3" style="padding: 4px">
-                                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                                <img src="{{ asset('img/home/summary/anh5.jpg') }}" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-3" style="padding: 4px">
-                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                            <img src="{{ asset('img/home/summary/anh6.jpg') }}" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3" style="padding: 4px">
-                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                            <img src="{{ asset('img/home/summary/anh7.jpg') }}" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3" style="padding: 4px">
-                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                            <img src="{{ asset('img/home/summary/anh8.jpg') }}" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3" style="padding: 4px">
-                                        <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                            <img src="{{ asset('img/home/summary/anh9.jpg') }}" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                          </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="left:-15%; bottom: -15%; opacity: unset">
-                                <img src="{{ asset('img/general/arrow-right-2.svg') }}" alt="">
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="right:-15%; bottom: -15%; opacity: unset">
-                                <img src="{{ asset('img/general/arrow-left-2.svg') }}" alt="">
-
-                            </button>
-                          </div>
-
-                        <div class="responsive">
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image slider-image show active">
-                                <img src="{{ asset('img/home/summary/anh2.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh3.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh4.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh5.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh6.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh7.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh8.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh9.jpg') }}" alt="">
-                            </a>
-                            <a data-bs-toggle="modal" data-bs-target="#summaryModal" href="javascript:;" class="slider-image">
-                                <img src="{{ asset('img/home/summary/anh10.jpg') }}" alt="">
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- <h5 class="modal-title" id="saturdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div id="summary-carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/home/summary/anh2.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh3.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh4.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh5.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh6.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh7.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh8.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh9.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('img/home/summary/anh10.jpg') }}" class="carousel-image" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#summary-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#summary-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="story" class="story">
-            <div class="container h-100 d-flex align-items-center">
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <p class="title">HÀNH TRÌNH KHÁCH HÀNG</p>
-                    <p class="description mb-5">
-                        Sở hữu thiết kế hiện đại với nội thất tiện nghi, rộng rãi và ngập tràn trang bị công nghệ, Veloz Cross được đông đảo khách hàng tin tưởng lựa chọn. Cùng Toyota Việt Nam ghi lại những khoảnh khắc đáng nhớ của gia đình trên mọi hành trình và viết nên những câu chuyện ý nghĩa với Veloz Cross nhé!
-                    </p>
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="row d-flex flex-row carousel-item active">
-                            <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
-                                <img src="{{ asset('img/home/story-1.png') }}" class="d-block w-100" alt="...">
-                                <p style="margin: 32px 0 8px 0; font-weight: 600">Nguyễn Văn Tuấn</p>
-                                <span style="color: #596780;">Huế</span>
-                            </div>
-                            <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
-                                <img src="{{ asset('img/home/story-2.png') }}" class="d-block w-100" alt="...">
-                                <p style="margin: 32px 0 8px 0; font-weight: 600">Andy Minh Phương</p>
-                                <span style="color: #596780;">Cần Thơ</span>
-                            </div>
-                            <div class="col-md-4 col-12 d-flex flex-column align-items-start mt-5 pe-0">
-                                <img src="{{ asset('img/home/story-3.png') }}" class="d-block w-100" alt="...">
-                                <p style="margin: 32px 0 8px 0; font-weight: 600">Tú Trân</p>
-                                <span style="color: #596780;">Cần Thơ</span>
-                            </div>
-                          </div>
-                        </div>
-                        <button style="position: absolute;bottom: 15%; left: -14%; opacity: unset;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                            <img src="{{ asset('img/general/icon-left.svg') }}" alt="">
-                        </button>
-                        <button style="position: absolute;bottom: 15%; right: -14%; opacity: unset;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                            <img src="{{ asset('img/general/icon-right.svg') }}" alt="">
-                        </button>
-                      </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="footer-banner" class="footer-banner">
-            <img class="background" src="{{ asset('img/home/toyota-straight.JPG') }}" alt="">
-            <img class="background small" src="{{ asset('img/home/toyota-straight-small.jpg') }}" alt="">
-            <div class="h-100 d-flex flex-column justify-content-end align-items-center">
-                <div class="link">
-                    <a href="#">
-                        Hãy cùng nhau chờ đón câu chuyện tiếp theo
-                    </a>
-                    <img src="{{ asset('/img/general/arrow-right.svg') }}" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section id="form">
-            <div class="container">
-                <div class="row" style="background-color: #F9F9F9">
-                    <div class="col-lg-7">
-                        <form data-aos="zoom-in" data-aos-duration="1000">
-                            <div class="form">
-                                <h1 class="form-title">Đăng ký lái thử xe</h1>
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <label for="form-select" class="form-label">Tỉnh / Thành phố*</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text">
-                                                <img src="{{ asset('img/general/icon-global-black.svg') }}" alt="">
-                                            </span>
-                                            <select id="form-select" class="form-select" name="province">
-                                                <option value="">Chọn tỉnh / thành phố</option>
-                                                @foreach ($province as $itemProvince)
-                                                    <option value="{{ $itemProvince['id'] }}">{{ $itemProvince['name'] }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <label for="form-select" class="form-label">Đại lý liên hệ*</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text">
-                                                <img src="{{ asset('img/general/icon-home-black.svg') }}" alt="">
-                                            </span>
-                                            <select id="form-select" class="form-select" name="dealer">
-                                                <option value="">Đại lý liên hệ</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <label for="name" class="form-label">Họ và tên*</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text">
-                                                <img src="{{ asset('img/general/icon-user-black.svg') }}" alt="">
-                                            </span>
-                                            <input type="text" class="form-control" id="name" name="name"
-                                                placeholder="Nhập họ và tên">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <label for="phone" class="form-label">Số điện thoại*</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text">
-                                                <img src="{{ asset('img/general/icon-phone-black.svg') }}" alt="">
-                                            </span>
-                                            <input type="text" class="form-control" id="phone" name="phone"
-                                                placeholder="Nhập số điện thoại">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <label for="email" class="form-label">Email</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text">
-                                                <img src="{{ asset('img/general/icon-mail-black.svg') }}" alt="">
-                                            </span>
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Nhập email">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <label for="form-select" class="form-label">Nhu cầu</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text">
-                                                <img src="{{ asset('img/general/icon-message-black.svg') }}" alt="">
-                                            </span>
-                                            <select id="form-select" class="form-select" name="to_buy">
-                                                <option value="">Dự định mua xe</option>
-                                                @foreach ($toBuy as $itemToBuy)
-                                                    <option value="{{ $itemToBuy['name'] }}">{{ $itemToBuy['name'] }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="policy">Bằng cách nhấp vào Đăng ký ngay, Khách hàng đồng ý gửi thông tin của
-                                    mình
-                                    tới
-                                    Toyota Việt Nam. Toyota Việt Nam sẽ giữ, sử dụng và đảm bảo bảo mật thông tin khách
-                                    hàng
-                                    theo quy định pháp luật nhằm mục đích phục vụ và tư vấn khách hàng.</p>
-                                <div class="d-flex justify-content-center align-content-center form-action save-data" style="cursor: pointer;">
-                                    <button class="btn" type="submit">Đăng ký ngay</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-5 text-center" data-aos="zoom-in" data-aos-duration="1000" alt="">
-                        <img class="form-section-image" src="{{ asset('img/home/form-image.png') }}">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="toast" data-autohide="false" style="position: absolute; top: 0; right: 0;">
-            <div class="toast-header">
-                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                                <rect fill="#007aff" width="100%" height="100%" /></svg>
-                <strong class="mr-auto">Toyota</strong>
-                <small class="text-muted">1 mins ago</small>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-            </div>
-            <div class="toast-body">
-                Đăng kí thành công !
-            </div>
-            </div>
-        <footer id="footer" class="w-100 d-flex justify-content-center align-items-center">
-            <span>© Bản quyền thuộc về công ty TOYOTA Việt Nam</span>
-        </footer>
-
+    <div class="sp-container">
+        <div class="sp-content">
+            <div class="sp-globe"></div>
+            <h2 class="frame-1">Gửi em</h2>
+            <h2 class="frame-2">Người con gái</h2>
+            <h2 class="frame-3">Mà Anh Thương Nhớ</h2>
+            <h2 class="frame-4">Yêu em</h2>
+            <h2 class="frame-5">
+                <span>Ngọc </span>
+                <span>Ánh</span>
+            </h2>
+        </div>
     </div>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-    <script src="{{ asset('js/index.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <canvas id="pinkboard">
+        <canvas id="pinkboard"> </canvas>
+    </canvas>
     <script>
-        $('body').on('click', '.save-data', function(e){
-            e.preventDefault();
-            let province = $(this).parent().find("select[name='province']").val();
-            let dealer =  $(this).parent().find("select[name='dealer']").val();
-            let name = $(this).parent().find("input[name='name']").val();
-            let phone = $(this).parent().find("input[name='phone']").val();
-            let email = $(this).parent().find("input[name='email']").val();
-            let to_buy =  $(this).parent().find("select[name='to_buy']").val();
-            let url = '{{ route('save-customer') }}';
+        /*
+         * Settings
+         */
+        var settings = {
+            particles: {
+                length: 2200, // maximum amount of particles
+                duration: 2, // particle duration in sec
+                velocity: 120, // particle velocity in pixels/sec
+                effect: -1.2, // play with this for a nice effect
+                size: 14, // particle size in pixels
+            },
+        };
 
-            let data = {
-                _token: "{{ csrf_token() }}",
-                province: province,
-                dealer: dealer,
-                firstName: name,
-                phoneNumber: phone,
-                email: email,
-                whenCustomerWantToBuy: (to_buy) ? to_buy : "Chưa xác định"
+        /*
+         * RequestAnimationFrame polyfill by Erik Möller
+         */
+        (function() {
+            var b = 0;
+            var c = ["ms", "moz", "webkit", "o"];
+            for (var a = 0; a < c.length && !window.requestAnimationFrame; ++a) {
+                window.requestAnimationFrame = window[c[a] + "RequestAnimationFrame"];
+                window.cancelAnimationFrame =
+                    window[c[a] + "CancelAnimationFrame"] ||
+                    window[c[a] + "CancelRequestAnimationFrame"];
             }
-            if (province.length == 0) {
-                alert('Vui lòng chọn tỉnh/ thành phố!')
-                return
+            if (!window.requestAnimationFrame) {
+                window.requestAnimationFrame = function(h, e) {
+                    var d = new Date().getTime();
+                    var f = Math.max(0, 16 - (d - b));
+                    var g = window.setTimeout(function() {
+                        h(d + f);
+                    }, f);
+                    b = d + f;
+                    return g;
+                };
             }
-            if (dealer.length == 0) {
-                alert('Vui lòng chọn đại lý!')
-                return
+            if (!window.cancelAnimationFrame) {
+                window.cancelAnimationFrame = function(d) {
+                    clearTimeout(d);
+                };
             }
-            if (name.length == 0) {
-                alert('Vui lòng nhập họ tên!')
-                return
+        })();
+
+        /*
+         * Point class
+         */
+        var Point = (function() {
+            function Point(x, y) {
+                this.x = typeof x !== "undefined" ? x : 0;
+                this.y = typeof y !== "undefined" ? y : 0;
             }
-            var filter = /^[0-9]{9,13}$/;
-            if (!filter.test(phone)) {
-                alert('Số điện thoại phải là số và lớn hơn 9 kí tự!')
-                return
+            Point.prototype.clone = function() {
+                return new Point(this.x, this.y);
+            };
+            Point.prototype.length = function(length) {
+                if (typeof length == "undefined")
+                    return Math.sqrt(this.x * this.x + this.y * this.y);
+                this.normalize();
+                this.x *= length;
+                this.y *= length;
+                return this;
+            };
+            Point.prototype.normalize = function() {
+                var length = this.length();
+                this.x /= length;
+                this.y /= length;
+                return this;
+            };
+            return Point;
+        })();
+
+        /*
+         * Particle class
+         */
+        var Particle = (function() {
+            function Particle() {
+                this.position = new Point();
+                this.velocity = new Point();
+                this.acceleration = new Point();
+                this.age = 0;
+            }
+            Particle.prototype.initialize = function(x, y, dx, dy) {
+                this.position.x = x;
+                this.position.y = y;
+                this.velocity.x = dx;
+                this.velocity.y = dy;
+                this.acceleration.x = dx * settings.particles.effect;
+                this.acceleration.y = dy * settings.particles.effect;
+                this.age = 0;
+            };
+            Particle.prototype.update = function(deltaTime) {
+                this.position.x += this.velocity.x * deltaTime;
+                this.position.y += this.velocity.y * deltaTime;
+                this.velocity.x += this.acceleration.x * deltaTime;
+                this.velocity.y += this.acceleration.y * deltaTime;
+                this.age += deltaTime;
+            };
+            Particle.prototype.draw = function(context, image) {
+                function ease(t) {
+                    return --t * t * t + 1;
+                }
+                var size = image.width * ease(this.age / settings.particles.duration);
+                context.globalAlpha = 1 - this.age / settings.particles.duration;
+                context.drawImage(
+                    image,
+                    this.position.x - size / 2,
+                    this.position.y - size / 2,
+                    size,
+                    size
+                );
+            };
+            return Particle;
+        })();
+
+        /*
+         * ParticlePool class
+         */
+        var ParticlePool = (function() {
+            var particles,
+                firstActive = 0,
+                firstFree = 0,
+                duration = settings.particles.duration;
+
+            function ParticlePool(length) {
+                // create and populate particle pool
+                particles = new Array(length);
+                for (var i = 0; i < particles.length; i++)
+                    particles[i] = new Particle();
+            }
+            ParticlePool.prototype.add = function(x, y, dx, dy) {
+                particles[firstFree].initialize(x, y, dx, dy);
+
+                // handle circular queue
+                firstFree++;
+                if (firstFree == particles.length) firstFree = 0;
+                if (firstActive == firstFree) firstActive++;
+                if (firstActive == particles.length) firstActive = 0;
+            };
+            ParticlePool.prototype.update = function(deltaTime) {
+                var i;
+
+                // update active particles
+                if (firstActive < firstFree) {
+                    for (i = firstActive; i < firstFree; i++)
+                        particles[i].update(deltaTime);
+                }
+                if (firstFree < firstActive) {
+                    for (i = firstActive; i < particles.length; i++)
+                        particles[i].update(deltaTime);
+                    for (i = 0; i < firstFree; i++) particles[i].update(deltaTime);
+                }
+
+                // remove inactive particles
+                while (
+                    particles[firstActive].age >= duration &&
+                    firstActive != firstFree
+                ) {
+                    firstActive++;
+                    if (firstActive == particles.length) firstActive = 0;
+                }
+            };
+            ParticlePool.prototype.draw = function(context, image) {
+                // draw active particles
+                if (firstActive < firstFree) {
+                    for (i = firstActive; i < firstFree; i++)
+                        particles[i].draw(context, image);
+                }
+                if (firstFree < firstActive) {
+                    for (i = firstActive; i < particles.length; i++)
+                        particles[i].draw(context, image);
+                    for (i = 0; i < firstFree; i++) particles[i].draw(context, image);
+                }
+            };
+            return ParticlePool;
+        })();
+
+        /*
+         * Putting it all together
+         */
+        (function(canvas) {
+            var context = canvas.getContext("2d"),
+                particles = new ParticlePool(settings.particles.length),
+                particleRate =
+                settings.particles.length / settings.particles.duration, // particles/sec
+                time;
+
+            // get point on heart with -PI <= t <= PI
+            function pointOnHeart(t) {
+                return new Point(
+                    160 * Math.pow(Math.sin(t), 3),
+                    130 * Math.cos(t) -
+                    50 * Math.cos(2 * t) -
+                    20 * Math.cos(3 * t) -
+                    10 * Math.cos(4 * t) +
+                    25
+                );
             }
 
-            saveData(url, data);
-        })
-        $('body').on('change', "select[name='province']", function() {
-            let urlProvince = '{{ route('province') }}'
-            let _this = $(this);
-            $.ajax({
-                url: urlProvince,
-                data: {province:$(this).val()},
-                method: "GET",
-                success: function(result) {
-                    var html = '';
-                    if (result.length > 0) {
-                        for (let i = 0; i < result.length; i++) {
-                            if (result[i]['name']) {
-                                html += '<option value="'+ result[i]['abbreviation'] +'">'+ result[i]['name'] +'</option>'
-                            }
-                        }
-                        _this.parent().parent().parent().find("select[name='dealer']").find('option').remove().end().append(html);
-                    } else {
-                        html = '<option value="">Đại lý liên hệ</option>'
-                        _this.parent().parent().parent().find("select[name='dealer']").find('option').remove().end().append(html);
-                    }
-                },
-                error: function(error) {
-                    console.log(error);
+            // creating the particle image using a dummy canvas
+            var image = (function() {
+                var canvas = document.createElement("canvas"),
+                    context = canvas.getContext("2d");
+                canvas.width = settings.particles.size;
+                canvas.height = settings.particles.size;
+                // helper function to create the path
+                function to(t) {
+                    var point = pointOnHeart(t);
+                    point.x =
+                        settings.particles.size / 3 +
+                        (point.x * settings.particles.size) / 550;
+                    point.y =
+                        settings.particles.size / 3 -
+                        (point.y * settings.particles.size) / 550;
+                    return point;
                 }
-            });
-        })
-        function saveData(url, data) {
-            $.ajax({
-                url: url,
-                data: data,
-                method: "POST",
-                success: function(result) {
-                    if (result.result.statusCode == 200) {
-                        $("form")[0].reset();
-                        $("form")[1].reset();
-                        html = '<option value="">Đại lý liên hệ</option>'
-                        $("select[name='dealer']").find('option').remove().end().append(html);
-                        alert('Đăng kí thành công !')
-                    } else {
-                        alert(result.result.message)
-                    }
-                },
-                error: function(error) {
-                    console.log(error);
+                // create the path
+                context.beginPath();
+                var t = -Math.PI;
+                var point = to(t);
+                context.moveTo(point.x, point.y);
+                while (t < Math.PI) {
+                    t += 0.01; // baby steps!
+                    point = to(t);
+                    context.lineTo(point.x, point.y);
                 }
-            });
-        }
-    </script>
-    <script>
-        AOS.init();
+                context.closePath();
+                // create the fill
+                context.fillStyle = "#ea80b0";
+                context.fill();
+                // create the image
+                var image = new Image();
+                image.src = canvas.toDataURL();
+                return image;
+            })();
+
+            // render that thing!
+            function render() {
+                // next animation frame
+                requestAnimationFrame(render);
+
+                // update time
+                var newTime = new Date().getTime() / 1000,
+                    deltaTime = newTime - (time || newTime);
+                time = newTime;
+
+                // clear canvas
+                context.clearRect(0, 0, canvas.width, canvas.height);
+
+                // create new particles
+                var amount = particleRate * deltaTime;
+                for (var i = 0; i < amount; i++) {
+                    var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
+                    var dir = pos.clone().length(settings.particles.velocity);
+                    particles.add(
+                        canvas.width / 2 + pos.x,
+                        canvas.height / 2 - pos.y,
+                        dir.x,
+                        -dir.y
+                    );
+                }
+
+                // update and draw particles
+                particles.update(deltaTime);
+                particles.draw(context, image);
+            }
+
+            // handle (re-)sizing of the canvas
+            function onResize() {
+                canvas.width = canvas.clientWidth;
+                canvas.height = canvas.clientHeight;
+            }
+            window.onresize = onResize;
+
+            // delay rendering bootstrap
+            setTimeout(function() {
+                onResize();
+                render();
+            }, 10);
+        })(document.getElementById("pinkboard"));
     </script>
 </body>
 
