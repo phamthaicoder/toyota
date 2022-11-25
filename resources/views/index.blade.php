@@ -454,7 +454,7 @@
                             <p class="title">
                                 ĐÁM CƯỚI 1-0-2
                             </p>
-                            <hr style="color: #CE0402; width: 70%; height: 1px; opacity: unset;">
+                            <hr style="color: #CE0402; width: 100%; height: 1px; opacity: unset;">
                             <div class="description" data-aos="fade-up" data-aos-duration="1000">
                                 Hôm nay cả nhà lên đường đi chơi. Đường xa nhưng xe chạy êm, lại thoáng rộng nên 2 chị
                                 em hào hứng, cười đùa trêu nhau rất rôm rả.
@@ -600,7 +600,7 @@
                                 lâu, rất lâu.<br>
                                 Hồi đóng phim “Bí mật Tam giác vàng”, đoàn làm phim phải di chuyển liên tục ở ba nước
                                 Lào - Campuchia - Myanmar qua hơn 10.000km.
-                                Vì thời gian gấp rút, Trường phải xa nhà với thời gian dài kỉ kỷ lục: 4 tháng.
+                                Vì thời gian gấp rút, Trường phải xa nhà với thời gian dài kỷ lục: 4 tháng.
                                 Khi đoàn quay ở Điện Biên, dù chỉ được nghỉ có ba ngày nhưng mình vẫn xin phép đạo diễn
                                 cho về nhà thăm nhà.
                                 Không gọi điện trước, khi mở cửa ra thấy mình, vợ rất bất<p class="read-more"
